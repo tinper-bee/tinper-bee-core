@@ -1,0 +1,12 @@
+{
+  "name": "bee-core",
+  "version": "0.0.1",
+  "description": "style core and js util for tinper-bee",
+  "main": "js/index.js",
+  "keywords": "tinper bee react util",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "zhoubyc",
+  "license": "MIT"
+}
