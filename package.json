@@ -1,8 +1,15 @@
 {
-  "name": "bee-core",
+  "name": "tinper-bee-core",
   "version": "0.0.1",
   "description": "style core and js util for tinper-bee",
   "main": "js/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/tinper-bee/tinper-bee-core",
+  "author": "",
+  "repository": "http://github.com/tinper-bee/tinper-bee-core",
+  "bugs": "https://github.com/tinper-bee/tinper-bee-core/issues",
   "keywords": "tinper bee react util",
   "scripts": {
     "test": "test"
