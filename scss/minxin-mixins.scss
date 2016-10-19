@@ -182,7 +182,7 @@
   @include typo-preferred-font($usePreferred);
   font-size: 13/16 * $unit;
   font-weight: 500;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0;
 
@@ -326,7 +326,7 @@
 @mixin badge-variant($color, $bg) {
   color: $color;
   background-color: $bg;
-  
+
   &[href] {
     &:hover,
     &:focus {
@@ -407,13 +407,13 @@
         background-color: $color-opacity;
     }
     .bufferbar{
-        background:none;        
+        background:none;
         background-color: $color-opacity;
     }
     .progressbar{
         background-color: $color;
     }
-    
+
 
 }
 
@@ -483,6 +483,10 @@
     a{
       color: #FFFFFF;
     }
+
+  }
+  .u-menu-item.active>a{
+    background-color:$color;
   }
   .u-menu-item:focus {
     outline: none;
@@ -496,17 +500,17 @@
 
 // utilities
 // font-weight
-@mixin font-weight-light(){ 
+@mixin font-weight-light(){
   font-weight: $font-weight-light;
 }
-@mixin font-weight-normal(){ 
-  font-weight: $font-weight-normal; 
+@mixin font-weight-normal(){
+  font-weight: $font-weight-normal;
 }
-@mixin font-weight-medium(){ 
-  font-weight: $font-weight-medium; 
+@mixin font-weight-medium(){
+  font-weight: $font-weight-medium;
 }
-@mixin font-weight-bold(){ 
-  font-weight: $font-weight-bold; 
+@mixin font-weight-bold(){
+  font-weight: $font-weight-bold;
 }
 
 // text

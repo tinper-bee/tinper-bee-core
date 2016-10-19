@@ -1,0 +1,1 @@
+export splitComponent from './splitComponent';
