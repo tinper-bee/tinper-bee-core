@@ -53,3 +53,7 @@ main {
 *[hidden] {
   display: none !important;
 }
+
+*, :after, :before {
+    box-sizing: border-box;
+}
