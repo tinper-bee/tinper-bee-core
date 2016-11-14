@@ -1,25 +1,9 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 
 @import "minxin-variables";
 
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+ * 跨浏览器样式适配
  */
 
 /* ==========================================================================
@@ -33,11 +17,7 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
+ * 选择时删除文本阴影，及设置默认选中颜色
  */
 
 ::selection {
@@ -46,7 +26,7 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
+ * 默认水平规则
  */
 
 hr {
@@ -59,9 +39,7 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+ * 删除音频，画布，iframes，图像，视频和其容器底部之间的差距
  */
 
 audio,
@@ -74,7 +52,7 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
+ * 删除默认字段集样式。
  */
 
 fieldset {
@@ -84,7 +62,7 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+ * 仅允许垂直调整textareas的大小
  */
 
 textarea {
@@ -102,9 +80,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 
 
@@ -123,20 +98,16 @@ textarea {
 
 
 /* ==========================================================================
-   Helper classes
+   帮助样式
    ========================================================================== */
 
-/*
- * Hide visually and from screen readers:
- */
 
 .hidden {
     display: none !important;
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * 适用于屏幕阅读器的隐藏
  */
 
 .visuallyhidden {
