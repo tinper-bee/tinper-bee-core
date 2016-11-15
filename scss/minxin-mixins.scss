@@ -297,7 +297,7 @@
           transition: transform $transition;
 }
 
-
+//添加圆角
 @mixin border-top-radius($radius) {
   border-top-right-radius: $radius;
    border-top-left-radius: $radius;
@@ -322,7 +322,7 @@
    border-radius: $border-radius;
 }
 
-//badge
+//徽章
 @mixin badge-variant($color, $bg) {
   color: $color;
   background-color: $bg;
@@ -337,7 +337,7 @@
 }
 
 
-//labels
+//标签
 
 @mixin tag-styles-variant($color, $hover-color) {
   background-color: $color;
@@ -357,7 +357,7 @@
 }
 
 
-// Pagination
+// 分页
 
 @mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
   > li {

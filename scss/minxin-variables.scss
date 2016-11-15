@@ -1,5 +1,5 @@
 
-$preferred_font: 'Microsoft YaHei', 'Helvetica', 'Arial', sans-serif !default;
+
 // $performance_font: 'Helvetica', 'Arial', sans-serif !default;
 
 @import "minxin-colors";
@@ -19,27 +19,15 @@ $trim-color-classes: false !default;
 
 @import "minxin-themeColors";
 
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
+
 $color-primary-contrast: $color-dark-contrast !default;
 $color-accent-contrast: $color-dark-contrast !default;
 $color-text: $palette-grey-900 !default;
 
-// cyan主题
-//$color-primary: $palette-cyan-500 !default;
-//$color-primary-dark: $palette-cyan-700 !default;
-//$color-accent: $palette-light-blue-500 !default;
-
-// orange主题
-//$color-primary: $palette-orange-500 !default;
-//$color-primary-dark: $palette-orange-700 !default;
-//$color-accent: $palette-deep-orange-500 !default;
+//不明所以 $primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
 
 // -- Fonts
-$preferred-font: "Roboto", "Helvetica", "Arial", sans-serif !default;
+$preferred-font: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei',sans-serif !default;
 $font-size: 1.6 * $unit !default;
 $font-size-tiny: 1.2 * $unit !default;
 $font-size-small: 1.4 * $unit !default;
@@ -57,7 +45,6 @@ $font-weight-light:       300;
 $font-weight-normal:      400;
 $font-weight-medium:      500;
 $font-weight-bold:        700;
-
 $font-weight-base:        $font-weight-normal;
 
 
@@ -87,7 +74,7 @@ $line-height-base:        1.57142857;
 /* 波纹效果 */
 $ripple-bg-color: unquote("rgb(#{$color-dark-contrast})") !default;
 
-/* 动画 */
+/*贝塞尔曲线动画 */
 $animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
 $animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
 $animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
@@ -104,7 +91,7 @@ $shadow-key-penumbra-opacity: 0.14 !default;
 $shadow-ambient-shadow-opacity: 0.12 !default;
 
 
-$primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
+
 //-- Indexes
 $z-index-highest: 300;
 $z-index-higher: 200;
@@ -124,7 +111,7 @@ $zindex-header:           1100;
 $zindex-footer:           1000;
 
 
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
 $text-link-color: unquote("rgb(#{$color-accent})") !default;
