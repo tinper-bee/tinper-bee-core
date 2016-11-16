@@ -17,23 +17,37 @@ tinper-bee组件库的核心样式及公用方法库
 - 设置图表间距
 - 设置显隐u-visible u-not-visible
 - 设置边框u-border-top...
-- 设置左右浮动u-right
-- 设置xs和sm时u-hidden-xs的隐藏
-### set-h5bp
-- html5标签的跨浏览器样式适配
-### set-mobile
-- 删除FAB按钮周围的不需要的框 
+
+
+
 ### set-normalize
+- 重置css样式
 ### set-resets
+- 选择时删除文本阴影，及设置默认选中颜色
+- html5标签的跨浏览器样式适配
+- 删除FAB按钮周围的不需要的框
 ### util-iconfont
+- 图标设定
 ### util-ripple
+- 波动动画设定
 ### util-shadow
-### util-tool
+- 阴影样式设定
 ### util-utilities
+- 垂直对齐样式
+- display样式
+- 文本换行，浅色
+- 文本位置
+- 文本大小写
+- 字体粗度
+- 字体大小
+- 清除浮动及左右浮动
+- 显示隐藏
+- 宽高常用预设样式
+- 常用margin，padding预设样式
+- visible，hidden的适配预设
 ### minxin-colors
 - [文档](http://tinper.org/dist/neoui/global/color.html)
 ### minxin-mixins
-
 ### minxin-palette
 - 设置根据minxin-colors的颜色生成背景颜色和字体颜色
 ### minxin-themeColors
