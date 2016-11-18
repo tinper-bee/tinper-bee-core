@@ -4,3 +4,4 @@ export deprecated from './deprecated';
 export elementType from './elementType';
 export isRequiredForA11y from './isRequiredForA11y';
 export splitComponent from './splitComponent';
+export createChainedFunction from './createChainedFunction';

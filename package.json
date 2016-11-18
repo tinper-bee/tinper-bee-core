@@ -1,8 +1,8 @@
 {
   "name": "tinper-bee-core",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "style core and js util for tinper-bee",
-  "main": "js/index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -12,10 +12,18 @@
   "bugs": "https://github.com/tinper-bee/tinper-bee-core/issues",
   "keywords": "tinper bee react util",
   "scripts": {
-    "test": "test"
+    "build": "rimraf lib && babel js -d lib"
   },
   "license": "MIT",
   "dependencies": {
     "warning": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-istanbul": "^3.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-register": "^6.18.0"
   }
 }
