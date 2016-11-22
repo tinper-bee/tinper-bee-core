@@ -331,7 +331,6 @@
     &:hover,
     &:focus {
       color: $color;
-      // background-color: darken($bg, 10%);
     }
   }
 }
@@ -415,6 +414,11 @@
     }
 
 
+}
+//alert 
+@mixin alert-styles-variant($border-color,$bg-color) {
+    background-color: $bg-color;
+    border-color: $border-color;
 }
 
 //checkbox

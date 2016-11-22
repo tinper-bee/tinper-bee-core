@@ -37,7 +37,7 @@ $font-weight-thin: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-semi-bold: 500 !default;
 $font-weight-bold: 700 !default;
-$font-color:unquote("rgb(#{$palette-u-gray-A100})") !default;
+$font-color:unquote("rgb(#{$palette-u-gray-A100})") f!default;
 
 
 $font-weight-override:    false;
@@ -162,6 +162,11 @@ $brand-info-active: unquote("rgb(#{$palette-cyan-600})") !default;
 $brand-warning: unquote("rgb(#{$palette-orange-500})") !default;
 $brand-warning-hover: unquote("rgb(#{$palette-orange-400})") !default;
 $brand-warning-active: unquote("rgb(#{$palette-orange-600})") !default;
+
+
+$brand-news: unquote("rgb(#{$palette-indigo-700},0.80)") !default;
+$brand-news-hover: unquote("rgb(#{$palette-indigo-600})") !default;
+$brand-news-active: unquote("rgb(#{$palette-indigo-800})") !default;
 
 $brand-danger:  unquote("rgb(#{$palette-red-500})") !default;
 $brand-danger-hover: unquote("rgb(#{$palette-red-400})") !default;
@@ -439,6 +444,18 @@ $default-item-divider-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 // Disabled Button Colors
 $disabled-item-text-color: unquote("rgb(#{$palette-grey-400})") !default;
 
+/* Alert */
+$alert-news-bg:  $brand-news;
+$alert-success-bg:  $brand-success;
+$alert-info-bg:  $brand-info;
+$alert-warning-bg: $brand-warning;
+$alert-danger-bg: $brand-danger;
+
+$alert-news-color: unquote("rgba(#{$palette-indigo-700})") !default;
+$alert-success-color: unquote("rgba(#{$palette-green-500})") !default;
+$alert-info-color: unquote("rgba(#{$palette-cyan-500})") !default;
+$alert-warning-color: unquote("rgba(#{$palette-indigo-700})") !default;
+$alert-danger-color: unquote("rgba(#{$palette-indigo-700})") !default;
 
 /* CHECKBOX */
 
