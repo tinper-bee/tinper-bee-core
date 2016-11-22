@@ -164,7 +164,7 @@ $brand-warning-hover: unquote("rgb(#{$palette-orange-400})") !default;
 $brand-warning-active: unquote("rgb(#{$palette-orange-600})") !default;
 
 
-$brand-news: unquote("rgb(#{$palette-indigo-700},0.80)") !default;
+$brand-news: unquote("rgb(#{$palette-indigo-700})") !default;
 $brand-news-hover: unquote("rgb(#{$palette-indigo-600})") !default;
 $brand-news-active: unquote("rgb(#{$palette-indigo-800})") !default;
 
@@ -176,6 +176,20 @@ $brand-dark:  $gray-darker;
 $brand-dark-hover: $gray-dark;
 $brand-dark-active:$gray-darkest;
 
+$brand-light-primary : unquote("rgb(#{$palette-indigo-100})") !default;
+$brand-light-success: unquote("rgb(#{$palette-green-100})") !default;
+$brand-light-info: unquote("rgb(#{$palette-cyan-100})") !default;
+$brand-light-warning: unquote("rgb(#{$palette-orange-100})") !default;
+$brand-light-news: unquote("rgb(#{$palette-indigo-100})") !default;
+$brand-light-danger:  unquote("rgb(#{$palette-red-100})") !default;
+
+/* 不同背景下对应的文字颜色 */
+
+$color-news: unquote("rgb(#{$palette-indigo-500})") !default;
+$color-success: unquote("rgb(#{$palette-green-500})") !default;
+$color-info: unquote("rgb(#{$palette-cyan-500})") !default;
+$color-warning: unquote("rgb(#{$palette-orange-500})") !default;
+$color-danger: unquote("rgb(#{$palette-red-500})") !default;
 
 /* UButton */
 
@@ -445,17 +459,24 @@ $default-item-divider-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 $disabled-item-text-color: unquote("rgb(#{$palette-grey-400})") !default;
 
 /* Alert */
-$alert-news-bg:  $brand-news;
-$alert-success-bg:  $brand-success;
-$alert-info-bg:  $brand-info;
-$alert-warning-bg: $brand-warning;
-$alert-danger-bg: $brand-danger;
+$alert-news-bg:  $brand-light-news;
+$alert-success-bg:  $brand-light-success;
+$alert-info-bg:  $brand-light-info;
+$alert-warning-bg: $brand-light-warning;
+$alert-danger-bg: $brand-light-danger;
 
-$alert-news-color: unquote("rgba(#{$palette-indigo-700})") !default;
-$alert-success-color: unquote("rgba(#{$palette-green-500})") !default;
-$alert-info-color: unquote("rgba(#{$palette-cyan-500})") !default;
-$alert-warning-color: unquote("rgba(#{$palette-indigo-700})") !default;
-$alert-danger-color: unquote("rgba(#{$palette-indigo-700})") !default;
+
+$alert-dark-news-bg:  $brand-news;
+$alert-dark-success-bg:  $brand-success;
+$alert-dark-info-bg:  $brand-info;
+$alert-dark-warning-bg: $brand-warning;
+$alert-dark-danger-bg: $brand-danger;
+
+$alert-news-color: $color-news;
+$alert-success-color: $color-success;
+$alert-info-color: $color-info;
+$alert-warning-color: $color-warning;
+$alert-danger-color: $color-danger;
 
 /* CHECKBOX */
 
