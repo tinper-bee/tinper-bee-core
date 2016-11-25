@@ -349,7 +349,6 @@
     &:hover,
     &:focus {
       color: $color;
-      // background-color: darken($bg, 10%);
     }
   }
 }
@@ -419,20 +418,15 @@
 }
 //progress
 
-@mixin progress-styles-variant($color,$color-opacity) {
-   .auxbar{
-        background:none;
-        background-color: $color-opacity;
-    }
-    .bufferbar{
-        background:none;
-        background-color: $color-opacity;
-    }
-    .progressbar{
-        background-color: $color;
-    }
+@mixin progress-styles-variant($bg-color) {
+        background-color: $bg-color;
+}
 
-
+//alert 
+@mixin alert-styles-variant($bg-color,$text-color) {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: $text-color;
 }
 
 //checkbox
@@ -450,29 +444,8 @@
 }
 //switch colors
 @mixin switch-styles-variant($color){
-  &.is-checked{
-    .u-switch-track{
-        background: $color;
-        border: 1px solid $color;
-    }
-  }
-}
-//switch size
-@mixin switch-size($width, $height, $border-radius, $border-left) {
-  .u-switch-track{
-      width:$width;
-      height:$height;
-      border-radius:$border-radius;
-  }
-  .u-switch-thumb{
-      width:$height;
-      height:$height;
-  }
-   &.is-checked{
-      .u-switch-thumb{
-          left:$border-left;
-      }
-   }
+    background: $color;
+    border: 1px solid $color;
 }
 
 //tooltips

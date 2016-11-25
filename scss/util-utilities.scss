@@ -1662,3 +1662,20 @@
 .u-link:focus, .u-link:hover {
     text-decoration: underline;
 }
+
+// 边框
+.u-border-top{
+  border-top:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-left{
+  border-left:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-right{
+  border-right:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-bottom{
+  border-bottom:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
