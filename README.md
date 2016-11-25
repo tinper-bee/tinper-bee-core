@@ -22,16 +22,20 @@ tinper-bee组件库的核心样式及公用方法库
 
 ### set-normalize
 - 重置css样式
+
 ### set-resets
 - 选择时删除文本阴影，及设置默认选中颜色
 - html5标签的跨浏览器样式适配
-- 删除FAB按钮周围的不需要的框
+
 ### util-iconfont
 - 图标设定
+
 ### util-ripple
 - 波动动画设定
+
 ### util-shadow
 - 阴影样式设定
+
 ### util-utilities
 - 垂直对齐样式
 - display样式
@@ -45,13 +49,18 @@ tinper-bee组件库的核心样式及公用方法库
 - 宽高常用预设样式
 - 常用margin，padding预设样式
 - visible，hidden的适配预设
+
 ### minxin-colors
 - [文档](http://tinper.org/dist/neoui/global/color.html)
+
 ### minxin-mixins
+
 ### minxin-palette
 - 设置根据minxin-colors的颜色生成背景颜色和字体颜色
+
 ### minxin-themeColors
 - 设置主色和辅色
+
 ### minxin-variables
 - 默认变量
     - 默认字体

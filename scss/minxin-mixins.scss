@@ -191,6 +191,24 @@
   }
 }
 
+@mixin colorful-button($name) {
+    .u-button-$name {
+        color: #fff;
+        background-color: $button-info-color;
+        border:1px  $button-info-color solid;
+    }
+
+    .u-button-$name.focus, .u-button-$name:focus, .u-button-$name:hover {
+        background-color: $button-info-hover-color;
+        border-color: $button-info-hover-color;
+    }
+
+    .u-button-$name.active, .u-button-$name:active, .open>.dropdown-toggle.u-button-$name {
+        background-color: $button-info-active-color;
+        border-color: $button-info-active-color;
+    }
+
+}
 /* Shadows */
 
 // Focus shadow mixin.
