@@ -5,3 +5,7 @@ export elementType from './elementType';
 export isRequiredForA11y from './isRequiredForA11y';
 export splitComponent from './splitComponent';
 export createChainedFunction from './createChainedFunction';
+export KeyCode from './keyCode';
+export contains from './contains';
+export addEventListener from './addEventListener';
+export cssAnimation from './cssAnimation';

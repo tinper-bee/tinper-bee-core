@@ -332,6 +332,27 @@
   border-bottom-left-radius: $radius;
      border-top-left-radius: $radius;
 }
+//边框按钮颜色
+@mixin border-button-styles-variant($text-color,$bg-color,$bg-hover-color) {
+    color: $text-color;
+    border:1px  $bg-color solid;
+    &.active,&:hover,&:active,&:focus{
+        color:#fff;
+        background-color: $bg-hover-color;
+        border-color: $bg-hover-color;
+    }
+}
+
+//按钮颜色
+@mixin button-styles-variant($text-color,$bg-color,$bg-hover-color) {
+    color: $text-color;
+    background-color: $bg-color;
+    border:1px  $bg-color solid;
+    &.active,&:hover,&:active,&:focus{
+        background-color: $bg-hover-color;
+        border-color: $bg-hover-color;
+    }
+}
 
 //按钮尺寸
 @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
