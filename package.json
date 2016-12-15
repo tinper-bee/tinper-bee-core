@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee-core",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "style core and js util for tinper-bee",
   "main": "lib/index.js",
   "engines": {
@@ -18,6 +18,7 @@
   "dependencies": {
     "add-dom-event-listener": "^1.0.1",
     "component-classes": "^1.2.6",
+    "dom-align": "^1.5.2",
     "warning": "^3.0.0"
   },
   "devDependencies": {
