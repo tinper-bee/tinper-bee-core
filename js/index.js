@@ -9,3 +9,6 @@ export KeyCode from './keyCode';
 export contains from './contains';
 export addEventListener from './addEventListener';
 export cssAnimation from './cssAnimation';
+export toArray from './toArray';
+//export getContainerRenderMixin from './getContainerRenderMixin';
+export Align from './Align';
