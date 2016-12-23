@@ -323,11 +323,11 @@
     &.focus, &:focus, &:hover {
     background-color: $bg-hover-color;
     border-color: $bg-hover-color;
-    color:$bg-hover-color;
+    color:#fff;
     }
 
     &.active, &:active {
-        color:$bg-active-color;
+        color:#fff;
         background-color: $bg-active-color;
         border-color: $bg-active-color;
     }
