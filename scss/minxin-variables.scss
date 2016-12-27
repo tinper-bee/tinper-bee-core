@@ -206,34 +206,23 @@ $color-danger: unquote("rgb(#{$palette-red-500})") !default;
 
 //redius
 
-$default-border-radius: 6px;
+$default-border-radius: 4px;
 
 /* UButton */
 
 // Default button colors.
-$button-primary-color: unquote("rgb(#{$color-white})") !default;
-$button-primary-color-IE8: unquote("rgb(#{$color-white})") !default;
+$button-default-color: $brand-default;
+$button-default-color-IE8: $brand-default;
+
+$button-hover-color: $brand-default-hover;
+$button-active-color: $brand-default-active;
+$button-focus-color: $brand-default-active;
+
+
 $button-secondary-color: unquote("rgb(#{$palette-u-gray-A100})") !default;
-$button-hover-color: #F7F7F7 !default;
-$button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
-$button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 
 
 
-// Colored button colors.
-$button-primary-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-primary-hover-color-alt: unquote("rgb(#{$color-primary-light})") !default;
-$button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
-$button-hover-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-active-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-focus-color-alt: $button-focus-color !default;
-
-// Ripple color for colored raised buttons.
-$button-ripple-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
-
-// Disabled button colors.
-$button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
-$button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !default;
 
 $button-primary-color:  $brand-primary;
 $button-primary-active-color:  $brand-primary-active;
@@ -289,22 +278,22 @@ $button-raised-font-size: 14/10 * $unit !default;
 $button-border-color:unquote("rgb(#{$palette-grey-300})") !default;
 
 // 大按钮
-$button-padding-y-lg:6px;
+$button-padding-y-lg:8px;
 $button-padding-x-lg:15px;
-$font-size-lg:14px;
-$button-border-radius-lg:3px;
+$font-size-lg:1.4 * $unit;
+
 
 //特大型按钮
 $button-padding-y-xg:10px;
 $button-padding-x-xg:18px;
-$font-size-xg:18px;
-$button-border-radius-xg:4px;
+$font-size-xg:1.6 * $unit;
+
 
 //小型按钮
-$button-padding-y-sm:1px;
+$button-padding-y-sm:3px;
 $button-padding-x-sm:5px;
-$font-size-sm:12px;
-$button-border-radius-sm:2px;
+$font-size-sm:1.2 * $unit;
+
 
 
 /* UText */
