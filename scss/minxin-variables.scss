@@ -219,7 +219,8 @@ $button-active-color: $brand-default-active;
 $button-focus-color: $brand-default-active;
 
 
-$button-secondary-color: unquote("rgb(#{$palette-u-gray-A100})") !default;
+$button-text-color: unquote("rgb(#{$color-dark-contrast})") !default;
+$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
 
 
 
