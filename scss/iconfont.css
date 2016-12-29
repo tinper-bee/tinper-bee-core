@@ -1,10 +1,10 @@
 
 @font-face {font-family: "uf";
-  src: url('../node_modules/tinper-bee-core/scss/iconfont.eot?t=1482291692022'); /* IE9*/
-  src: url('../node_modules/tinper-bee-core/scss/iconfont.eot?t=1482291692022#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../node_modules/tinper-bee-core/scss/iconfont.woff?t=1482291692022') format('woff'), /* chrome, firefox */
-  url('../node_modules/tinper-bee-core/scss/iconfont.ttf?t=1482291692022') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../node_modules/tinper-bee-core/scss/iconfont.svg?t=1482291692022#uf') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1482982120945'); /* IE9*/
+  src: url('iconfont.eot?t=1482982120945#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1482982120945') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1482982120945') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1482982120945#uf') format('svg'); /* iOS 4.1- */
 }
 
 .uf {
@@ -622,3 +622,4 @@
 .uf-mi:before { content: "\e993"; }
 
 .uf-treeline-copy:before { content: "\e994"; }
+

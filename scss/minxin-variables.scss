@@ -5,6 +5,7 @@
 @import "minxin-colors";
 
 
+
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
@@ -19,9 +20,10 @@ $trim-color-classes: false !default;
 
 @import "minxin-themeColors";
 
-
+//对比色
 $color-primary-contrast: $color-dark-contrast !default;
 $color-accent-contrast: $color-dark-contrast !default;
+//字体颜色
 $color-text: $palette-grey-900 !default;
 
 //不明所以 $primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
@@ -37,7 +39,7 @@ $font-weight-thin: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-semi-bold: 500 !default;
 $font-weight-bold: 700 !default;
-$font-color:unquote("rgb(#{$palette-u-gray-A100})") !default;
+$font-color:unquote("rgb(#{$palette-u-gray-800})") !default;
 
 
 $font-weight-override:    false;
@@ -61,6 +63,7 @@ $gray-lightest:unquote("rgb(#{$palette-grey-200})") !default;
 $inverse: unquote("rgb(#{$color-white})") !default;
 $border-color-base:       $gray-lighter;
 $line-height-base:        1.57142857;
+
 /* 客户化 */
 @if $styleguide-generate-template == true {
   $color-primary: '$color-primary';
@@ -102,6 +105,8 @@ $z-index-lower: -200;
 
 $zindex-modal:            1700;
 $zindex-modal-background: 1600;
+$zIndex-notification: 1550;
+$zIndex-message: 1550;
 $zindex-navbar-fixed:     1500;
 $zindex-menubar:          1400;
 $zindex-overlay:          1300;
@@ -113,13 +118,14 @@ $zindex-footer:           1000;
 
 /* ==========  文本字体  ========== */
 
+//todo
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
 $text-link-color: unquote("rgb(#{$color-accent})") !default;
 
 $target-elements-directly: true !default;
 
 
-
+$global-selected-color: $palette-blue-100;
 
 
 /* 控件 */
@@ -128,15 +134,24 @@ $cursor-disabled:   not-allowed;
 
 
 $title-color:           $gray-darkest;
+//todo
 $subtitle-color:        $gray-darker;
 $text-color:            $gray-dark;
+
 $prompt-color:          $gray;
 //全局不同状态颜色
-$active-color-base:  unquote("rgb(#{$palette-indigo-700})") !default;
-$normal-color-base:  unquote("rgb(#{$palette-indigo-500})") !default;
-$hover-color-base:   unquote("rgb(#{$palette-indigo-500})") !default;
+//todo
+$active-color-base:  unquote("rgb(#{$palette-blue-800})") !default;
+$normal-color-base:  unquote("rgb(#{$palette-blue-600})") !default;
+$hover-color-base:   unquote("rgb(#{$palette-blue-400})") !default;
+
 $bg-color-base:       $gray-lightest;
+
+//disable颜色
 $disabled-color-base: $gray-light;
+$disabled-border-color: $gray-lighter;
+$disabled-bg-color: $gray-lightest;
+
 // 全局链接颜色
 $link-color:            $normal-color-base;
 $link-hover-color:      $hover-color-base;
@@ -147,76 +162,70 @@ $brand-default: $gray-lighter;
 $brand-default-hover: $gray-lightest;
 $brand-default-active:  $gray-light;
 
-$brand-primary : unquote("rgb(#{$palette-indigo-500})") !default;
-$brand-primary-hover: unquote("rgb(#{$palette-indigo-400})") !default;
-$brand-primary-active: unquote("rgb(#{$palette-indigo-600})") !default;
+$brand-primary : unquote("rgb(#{$color-primary})") !default;
+$brand-primary-hover: unquote("rgb(#{$color-primary-light})") !default;
+$brand-primary-active: unquote("rgb(#{$color-primary-dark})") !default;
 
 $brand-success: unquote("rgb(#{$palette-green-500})") !default;
-$brand-success-hover: unquote("rgb(#{$palette-green-400})") !default;
-$brand-success-active: unquote("rgb(#{$palette-green-600})") !default;
+$brand-success-hover: unquote("rgb(#{$palette-green-300})") !default;
+$brand-success-active: unquote("rgb(#{$palette-green-700})") !default;
 
 $brand-info: unquote("rgb(#{$palette-cyan-500})") !default;
-$brand-info-hover: unquote("rgb(#{$palette-cyan-400})") !default;
-$brand-info-active: unquote("rgb(#{$palette-cyan-600})") !default;
+$brand-info-hover: unquote("rgb(#{$palette-cyan-300})") !default;
+$brand-info-active: unquote("rgb(#{$palette-cyan-700})") !default;
 
 $brand-warning: unquote("rgb(#{$palette-orange-500})") !default;
-$brand-warning-hover: unquote("rgb(#{$palette-orange-400})") !default;
-$brand-warning-active: unquote("rgb(#{$palette-orange-600})") !default;
+$brand-warning-hover: unquote("rgb(#{$palette-orange-300})") !default;
+$brand-warning-active: unquote("rgb(#{$palette-orange-700})") !default;
 
 
-$brand-news: unquote("rgb(#{$palette-indigo-700})") !default;
-$brand-news-hover: unquote("rgb(#{$palette-indigo-600})") !default;
-$brand-news-active: unquote("rgb(#{$palette-indigo-800})") !default;
+$brand-news: unquote("rgb(#{$palette-blue-500})") !default;
+$brand-news-hover: unquote("rgb(#{$palette-blue-300})") !default;
+$brand-news-active: unquote("rgb(#{$palette-blue-700})") !default;
 
 $brand-danger:  unquote("rgb(#{$palette-red-500})") !default;
-$brand-danger-hover: unquote("rgb(#{$palette-red-400})") !default;
-$brand-danger-active: unquote("rgb(#{$palette-red-600})") !default;
+$brand-danger-hover: unquote("rgb(#{$palette-red-300})") !default;
+$brand-danger-active: unquote("rgb(#{$palette-red-700})") !default;
 
 $brand-dark:  $gray-darker;
 $brand-dark-hover: $gray-dark;
-$brand-dark-active:$gray-darkest;
+$brand-dark-active: $gray-darkest;
 
-$brand-light-primary : unquote("rgb(#{$palette-indigo-100})") !default;
+$brand-light-primary : unquote("rgb(#{$palette-blue-100})") !default;
 $brand-light-success: unquote("rgb(#{$palette-green-100})") !default;
 $brand-light-info: unquote("rgb(#{$palette-cyan-100})") !default;
 $brand-light-warning: unquote("rgb(#{$palette-orange-100})") !default;
-$brand-light-news: unquote("rgb(#{$palette-indigo-100})") !default;
+$brand-light-news: unquote("rgb(#{$palette-blue-100})") !default;
 $brand-light-danger:  unquote("rgb(#{$palette-red-100})") !default;
 
 /* 不同背景下对应的文字颜色 */
 
-$color-news: unquote("rgb(#{$palette-indigo-500})") !default;
+$color-news: unquote("rgb(#{$palette-blue-500})") !default;
 $color-success: unquote("rgb(#{$palette-green-500})") !default;
 $color-info: unquote("rgb(#{$palette-cyan-500})") !default;
 $color-warning: unquote("rgb(#{$palette-orange-500})") !default;
 $color-danger: unquote("rgb(#{$palette-red-500})") !default;
 
+//redius
+
+$default-border-radius: 4px;
+
 /* UButton */
 
 // Default button colors.
-$button-primary-color: unquote("rgb(#{$color-white})") !default;
-$button-primary-color-IE8: unquote("rgb(#{$color-white})") !default;
-$button-secondary-color: unquote("rgb(#{$palette-u-gray-A100})") !default;
-$button-hover-color: #F7F7F7 !default;
-$button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
-$button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$button-default-color: $brand-default;
+$button-default-color-IE8: $brand-default;
+
+$button-hover-color: $brand-default-hover;
+$button-active-color: $brand-default-active;
+$button-focus-color: $brand-default-active;
+
+
+$button-text-color: unquote("rgb(#{$color-dark-contrast})") !default;
+$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
 
 
 
-// Colored button colors.
-$button-primary-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-primary-hover-color-alt: unquote("rgb(#{$color-primary-light})") !default;
-$button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
-$button-hover-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-active-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-focus-color-alt: $button-focus-color !default;
-
-// Ripple color for colored raised buttons.
-$button-ripple-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
-
-// Disabled button colors.
-$button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
-$button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !default;
 
 $button-primary-color:  $brand-primary;
 $button-primary-active-color:  $brand-primary-active;
@@ -250,44 +259,44 @@ $button-icon-focus-color: $button-focus-color !default;
 
 //Dimensions
 
-$button-min-width: 72/16 * $unit !default;
-$button-height: 36/16 * $unit !default;
-$button-padding: 5/16* $unit  13/16 * $unit !default;
+$button-min-width: 72/10 * $unit !default;
+$button-height: 36/10 * $unit !default;
+$button-padding: 5/10* $unit  13/10 * $unit !default;
 $button-padding-IE8: 5px 13px !default;
-$button-top-padding: 13/16 * $unit !default;
-$button-left-padding: 6/16* $unit !default;
+$button-top-padding: 1310 * $unit !default;
+$button-left-padding: 6/10* $unit !default;
 $button-line-height:1.57142857;
-$button-margin: 4/16 * $unit !default;
-$button-border-radius: 4/16 * $unit !default;
+$button-margin: 4/10 * $unit !default;
+$button-border-radius: 4/10 * $unit !default;
 
-$button-fab-size: 38/16 * $unit !default;
-$button-fab-size-mini: 30/16 * $unit !default;
-$button-fab-font-size: 14/16 * $unit !default;
+$button-fab-size: 38/10 * $unit !default;
+$button-fab-size-mini: 30/10 * $unit !default;
+$button-fab-font-size: 14/10 * $unit !default;
 
-$button-icon-size: 32/16 * $unit !default;
-$button-icon-size-mini: 13/16 * $unit !default;
+$button-icon-size: 32/10 * $unit !default;
+$button-icon-size-mini: 13/10 * $unit !default;
 
-$button-raised-font-size: 14/16 * $unit !default;
+$button-raised-font-size: 14/10 * $unit !default;
 
 $button-border-color:unquote("rgb(#{$palette-grey-300})") !default;
 
 // 大按钮
-$button-padding-y-lg:6px;
+$button-padding-y-lg:8px;
 $button-padding-x-lg:15px;
-$font-size-lg:14px;
-$button-border-radius-lg:3px;
+$font-size-lg:1.4 * $unit;
+
 
 //特大型按钮
 $button-padding-y-xg:10px;
 $button-padding-x-xg:18px;
-$font-size-xg:18px;
-$button-border-radius-xg:4px;
+$font-size-xg:1.6 * $unit;
+
 
 //小型按钮
-$button-padding-y-sm:1px;
+$button-padding-y-sm:3px;
 $button-padding-x-sm:5px;
-$font-size-sm:12px;
-$button-border-radius-sm:2px;
+$font-size-sm:1.2 * $unit;
+
 
 
 /* UText */
@@ -708,7 +717,7 @@ $card-title-transform-origin-y: 56px !default;
 $card-title-text-transform-origin-x: 149px !default;
 $card-title-text-transform-origin-y: 48px !default;
 
-$card-supporting-text-font-size: 1rem !default;
+$card-supporting-text-font-size: 1.4 * $unit !default;
 $card-supporting-text-line-height: 18px !default;
 
 $card-actions-font-size: 13px !default;
@@ -1055,3 +1064,57 @@ $navbar-inverse-toggle-border-color:       transparent;
 
 //hamburger
 $hamburger-size: 17px;
+
+
+//panel
+$panel-header-padding : 10px 15px;
+$panel-footer-padding : 10px 15px;
+$panel-body-padding : 15px 15px;
+$panel-header-bg-color : #f5f5f5;
+$panel-footer-bg-color : #f5f5f5;
+$panel-bg-color : #fff;
+$panel-default-color : #757575;
+$panel-inner-border-color: #ddd;
+
+
+//modal
+$modal-header-padding : 15px;
+$modal-body-padding : 15px;
+$modal-footer-padding : 15px;
+$modal-content-bg-color: #fff;
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: .6;
+$modal-header-border-color: transparent;
+$modal-footer-border-color: transparent;
+$modal-xlg: 1200px;
+$modal-lg: 900px;
+$modal-sm: 300px;
+$modal-default: 600px;
+$modal-border-radius: 3px;
+
+//notification
+
+$zIndex-notification: $zIndex-notification;
+$notification-top: 30px;
+$notification-bottom: 30px;
+$notification-right: 30px;
+$notification-width: 300px;
+$notification-text-margin-right: 15px;
+$notice-padding: 15px;
+$notice-background: $gray-darkest;
+$notice-bottom: 15px;
+
+//message
+
+$message-font-size: 12px;
+$zIndex-message: 1010;
+$message-top: 16px;
+$message-left:0;
+
+$message-right: 30px;
+$message-width: 300px;
+$message-text-margin-right: 15px;
+$default-border-radius: 4px;
+$message-padding: 0;
+$message-content-padding: 15px;
+$message-background: $gray-darkest;

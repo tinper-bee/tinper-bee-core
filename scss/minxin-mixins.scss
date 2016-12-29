@@ -9,7 +9,7 @@
 
 @mixin typo-display-4($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 112/16 * $unit;
+  font-size: 112/10 * $unit;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -21,7 +21,7 @@
 
 @mixin typo-display-3($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 56/16 * $unit;
+  font-size: 56/10 * $unit;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: -0.02em;
@@ -33,9 +33,9 @@
 
 @mixin typo-display-2($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 45/16 * $unit;
+  font-size: 45/10 * $unit;
   font-weight: 400;
-  line-height: 48/16 * $unit;
+  line-height: 48/10 * $unit;
 
   @if $colorContrast {
     opacity: 0.54;
@@ -44,9 +44,9 @@
 
 @mixin typo-display-1($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 34/16 * $unit;
+  font-size: 34/10 * $unit;
   font-weight: 400;
-  line-height: 40/16 * $unit;
+  line-height: 40/10 * $unit;
 
   @if $colorContrast {
     opacity: 0.54;
@@ -55,9 +55,9 @@
 
 @mixin typo-headline($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 24/16 * $unit;
+  font-size: 24/10 * $unit;
   font-weight: 400;
-  line-height: 32/16 * $unit;
+  line-height: 32/10 * $unit;
   -moz-osx-font-smoothing: grayscale;
 
   @if $colorContrast {
@@ -67,7 +67,7 @@
 
 @mixin typo-title($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 20/16 * $unit;
+  font-size: 20/10 * $unit;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -79,9 +79,9 @@
 
 @mixin typo-subhead($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 16/16 * $unit;
+  font-size: 16/10 * $unit;
   font-weight: 400;
-  line-height: 24/16 * $unit;
+  line-height: 24/10 * $unit;
   letter-spacing: 0.04em;
 
   @if $colorContrast {
@@ -91,9 +91,9 @@
 
 @mixin typo-subhead-2($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 16/16 * $unit;
+  font-size: 16/10 * $unit;
   font-weight: 400;
-  line-height: 28/16 * $unit;
+  line-height: 28/10 * $unit;
   letter-spacing: 0.04em;
 
   @if $colorContrast {
@@ -103,13 +103,13 @@
 
 @mixin typo-body-2($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14/16 * $unit;
+  font-size: 14/10 * $unit;
   @if $usePreferred {
     font-weight: 500;
   } @else {
     font-weight: bold;
   }
-  line-height: 24/16 * $unit;
+  line-height: 24/10 * $unit;
   letter-spacing: 0;
 
   @if $colorContrast {
@@ -119,9 +119,9 @@
 
 @mixin typo-body-1($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14/16 * $unit;
+  font-size: 14/10 * $unit;
   font-weight: 400;
-  line-height: 24/16 * $unit;
+  line-height: 24/10 * $unit;
   letter-spacing: 0;
 
   @if $colorContrast {
@@ -131,7 +131,7 @@
 
 @mixin typo-caption($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 12/16 * $unit;
+  font-size: 12/10 * $unit;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
@@ -144,7 +144,7 @@
 @mixin typo-blockquote($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
   position: relative;
-  font-size: 24/16 * $unit;
+  font-size: 24/10 * $unit;
   font-weight: 300;
   font-style: italic;
   line-height: 1.35;
@@ -168,7 +168,7 @@
 
 @mixin typo-menu($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14/16 * $unit;
+  font-size: 14/10 * $unit;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0;
@@ -180,7 +180,7 @@
 
 @mixin typo-button($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 13/16 * $unit;
+  font-size: 14/10 * $unit;
   font-weight: 500;
   // text-transform: uppercase;
   line-height: 1;
@@ -195,7 +195,7 @@
 
 // Focus shadow mixin.
 @mixin focus-shadow() {
-  box-shadow: 0 0 8/16 * $unit rgba(0,0,0,.18),0 8/16 * $unit 16/16 * $unit rgba(0,0,0,.36);
+  box-shadow: 0 0 8/10 * $unit rgba(0,0,0,.18),0 8/10 * $unit 16/10 * $unit rgba(0,0,0,.36);
 }
 
 @mixin shadow-0dp() {
@@ -203,44 +203,44 @@
 }
 
 @mixin shadow-2dp() {
-  box-shadow: 0 2/16 * $unit 2/16 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 3/16 * $unit 1/16 * $unit -2/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity),
-  0 1/16 * $unit 5/16 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
-  box-shadow: 0 2/16 * $unit 2/16 * $unit 0 rgb(0, 0, 0),
-  0 3/16 * $unit 1/16 * $unit -2/16 * $unit rgb(0, 0, 0),
-  0 1/16 * $unit 5/16 * $unit 0 rgb(0, 0, 0) \9;
+  box-shadow: 0 2/10 * $unit 2/10 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 3/10 * $unit 1/10 * $unit -2/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity),
+  0 1/10 * $unit 5/10 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+  box-shadow: 0 2/10 * $unit 2/10 * $unit 0 rgb(0, 0, 0),
+  0 3/10 * $unit 1/10 * $unit -2/10 * $unit rgb(0, 0, 0),
+  0 1/10 * $unit 5/10 * $unit 0 rgb(0, 0, 0) \9;
 }
 @mixin shadow-3dp() {
-  box-shadow: 0 3/16 * $unit 4/16 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 3/16 * $unit 3/16 * $unit -2/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity),
-  0 1/16 * $unit 8/16 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+  box-shadow: 0 3/10 * $unit 4/10 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 3/10 * $unit 3/10 * $unit -2/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity),
+  0 1/10 * $unit 8/10 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
 }
 @mixin shadow-4dp() {
-  box-shadow: 0 4/16 * $unit 5/16 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 1/16 * $unit 10/16 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-  0 2/16 * $unit 4/16 * $unit -1/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
+  box-shadow: 0 4/10 * $unit 5/10 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 1/10 * $unit 10/10 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+  0 2/10 * $unit 4/10 * $unit -1/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 @mixin shadow-6dp() {
-  box-shadow: 0 6/16 * $unit 10/16 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 1/16 * $unit 18/16 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-  0 3/16 * $unit 5/16 * $unit -1/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
+  box-shadow: 0 6/10 * $unit 10/10 * $unit 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 1/10 * $unit 18/10 * $unit 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+  0 3/10 * $unit 5/10 * $unit -1/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 @mixin shadow-8dp() {
-  box-shadow: 0 8/16 * $unit 10/16 * $unit 1/16 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 3/16 * $unit 14/16 * $unit 2/16 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-  0 5/16 * $unit 5/16 * $unit -3/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
+  box-shadow: 0 8/10 * $unit 10/10 * $unit 1/10 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 3/10 * $unit 14/10 * $unit 2/10 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+  0 5/10 * $unit 5/10 * $unit -3/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 
 @mixin shadow-16dp() {
-  box-shadow: 0 16/16 * $unit 24/16 * $unit 2/16 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0  6/16 * $unit 30/16 * $unit 5/16 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-  0  8/16 * $unit 10/16 * $unit -5/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
+  box-shadow: 0 16/10 * $unit 24/10 * $unit 2/10 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0  6/10 * $unit 30/10 * $unit 5/10 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+  0  8/10 * $unit 10/10 * $unit -5/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 
 @mixin shadow-24dp() {
-  box-shadow: 0  9/16 * $unit 46/16 * $unit  8/16 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-  0 11/16 * $unit 15/16 * $unit -7/16 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
-  0 24/16 * $unit 38/16 * $unit  3/16 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
+  box-shadow: 0  9/10 * $unit 46/10 * $unit  8/10 * $unit rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+  0 11/10 * $unit 15/10 * $unit -7/10 * $unit rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+  0 24/10 * $unit 38/10 * $unit  3/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 
 /* Animations */
@@ -323,11 +323,11 @@
     &.focus, &:focus, &:hover {
     background-color: $bg-hover-color;
     border-color: $bg-hover-color;
-    color:$bg-hover-color;
+    color:#fff;
     }
 
     &.active, &:active {
-        color:$bg-active-color;
+        color:#fff;
         background-color: $bg-active-color;
         border-color: $bg-active-color;
     }
@@ -352,10 +352,9 @@
 }
 
 //按钮尺寸
-@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+@mixin button-size($padding-y, $padding-x, $font-size) {
   padding: $padding-y $padding-x;
   font-size: $font-size;
-   border-radius: $border-radius;
 }
 
 //徽章

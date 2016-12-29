@@ -6,11 +6,14 @@
 //主要颜色,次要颜色值与ui中保持一致
 @import "minxin-themeColors";
 
+html{
+     font-size: 10px;
+}
 
 body {
   font-family: $preferred-font;
   font-color:$font-color;
-  font-size: 1em;
+  font-size: 1.4rem;
   line-height: 1.4;
 }
 
@@ -26,7 +29,7 @@ i.uf{
  */
 
 ::selection {
-    background: #b3d4fc;
+    background: $global-selected-color;
     text-shadow: none;
 }
 
