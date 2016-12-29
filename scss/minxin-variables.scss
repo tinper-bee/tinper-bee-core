@@ -485,6 +485,15 @@ $alert-info-color: $color-info;
 $alert-warning-color: $color-warning;
 $alert-danger-color: $color-danger;
 
+$alert-padding:10px;
+$alert-font-size:12px;
+$alert-border-radius: 4px;
+$alert-text-padding-left: 15px;
+$alert-text-padding-right: 15px;
+$alert-close-font-size: 21px;
+$alert-close-opacity: .2;
+$alert-close-font-weight: 700;
+
 /* Checkbox */
 
 $checkbox-color: unquote("rgb(#{$color-primary})") !default;
@@ -671,13 +680,14 @@ $table-bg-accent:               unquote("rgba(#{$palette-grey-200},.3)") !defaul
 
 
 /* tooltip*/
-$tooltip-background: rgba(97,97,97,.9) !default;
-$tooltip-margin: 0.5 * $unit !default;
-$tooltip-border-radius: .2 * $unit !default;
-$tooltip-color: #fff !default;
-$tooltip-max-width: 17 * $unit !default;
-$tooltip-padding: .8 * $unit !default;
-$tooltip-animation-duration: 200ms !default;
+$tooltip-max-width: 200px;
+$tooltip-color: #fff;
+$tooltip-bg: #000;
+$tooltip-inverse-border-color: #d9d9d9;
+$tooltip-inverse-color: rgb(51,51,51);
+$tooltip-arrow-color: $tooltip-bg;
+$tooltip-opacity: .9;
+
 
 /* 进度条 */
 $bar-height: 4px !default;
