@@ -105,6 +105,8 @@ $z-index-lower: -200;
 
 $zindex-modal:            1700;
 $zindex-modal-background: 1600;
+$zIndex-notification: 1550;
+$zIndex-message: 1550;
 $zindex-navbar-fixed:     1500;
 $zindex-menubar:          1400;
 $zindex-overlay:          1300;
@@ -1088,3 +1090,30 @@ $modal-lg: 900px;
 $modal-sm: 300px;
 $modal-default: 600px;
 $modal-border-radius: 3px;
+
+//notification
+
+$zIndex-notification: $zIndex-notification;
+$notification-top: 30px;
+$notification-bottom: 30px;
+$notification-right: 30px;
+$notification-width: 300px;
+$notification-text-margin-right: 15px;
+$notice-padding: 15px;
+$notice-background: $gray-darkest;
+$notice-bottom: 15px;
+
+//message
+
+$message-font-size: 12px;
+$zIndex-message: 1010;
+$message-top: 16px;
+$message-left:0;
+
+$message-right: 30px;
+$message-width: 300px;
+$message-text-margin-right: 15px;
+$default-border-radius: 4px;
+$message-padding: 0;
+$message-content-padding: 15px;
+$message-background: $gray-darkest;
