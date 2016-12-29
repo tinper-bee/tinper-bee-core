@@ -482,6 +482,15 @@ $alert-info-color: $color-info;
 $alert-warning-color: $color-warning;
 $alert-danger-color: $color-danger;
 
+$alert-padding:10px;
+$alert-font-size:12px;
+$alert-border-radius: 4px;
+$alert-text-padding-left: 15px;
+$alert-text-padding-right: 15px;
+$alert-close-font-size: 21px;
+$alert-close-opacity: .2;
+$alert-close-font-weight: 700;
+
 /* Checkbox */
 
 $checkbox-color: unquote("rgb(#{$color-primary})") !default;
