@@ -462,6 +462,27 @@ $default-item-divider-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 // Disabled Button Colors
 $disabled-item-text-color: unquote("rgb(#{$palette-grey-400})") !default;
 
+/* Tile */
+$tile-width: 100%;
+
+$tile-default-border-color: #e9e9e9;
+$tile-default-hover-shadow-color: rgba(0, 0, 0, 0.2);
+
+$tile-primary-border-color: $button-primary-color-alt;
+$tile-primary-hover-shadow-color: $button-primary-hover-color-alt;
+
+$tile-danger-border-color: $button-danger-color;
+$tile-danger-hover-shadow-color: $button-danger-hover-color;
+
+$tile-warning-border-color: $button-warning-color;
+$tile-warning-hover-shadow-color: $button-warning-hover-color;
+
+$tile-success-border-color: $button-success-color;
+$tile-success-hover-shadow-color: $button-success-hover-color;
+
+$tile-info-border-color: $button-info-color;
+$tile-info-hover-shadow-color: $button-info-hover-color;
+
 /* Alert */
 $alert-news-bg:  $brand-light-news;
 $alert-success-bg:  $brand-light-success;
