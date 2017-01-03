@@ -105,8 +105,11 @@ $z-index-lower: -200;
 
 $zindex-modal:            1700;
 $zindex-modal-background: 1600;
-$zIndex-notification: 1550;
+$zIndex-notification: 1560;
 $zIndex-message: 1550;
+$zIndex-popover: 1540;
+$zIndex-tooltip: 1530;
+$zIndex-alert: 1510;
 $zindex-navbar-fixed:     1500;
 $zindex-menubar:          1400;
 $zindex-overlay:          1300;
@@ -1137,9 +1140,6 @@ $notice-bottom: 15px;
 //message
 
 $message-font-size: 12px;
-$zIndex-message: 1010;
-$message-top: 16px;
-$message-left:0;
 
 $message-right: 30px;
 $message-width: 300px;
@@ -1148,3 +1148,19 @@ $default-border-radius: 4px;
 $message-padding: 0;
 $message-content-padding: 15px;
 $message-background: $gray-darkest;
+
+//popconfirm
+
+$popconfirm-max-width: 300px;
+$zIndex-popconfirm: 1540;
+$popconfirm-dark-bg: $gray-darkest;
+$popconfirm-fallback-dark-border-color: $gray-darkest;
+$popconfirm-margin: 10px;
+$popconfirm-title-bg: #fff;
+$popconfirm-border-color:$border-color-base;
+$popconfirm-arrow-width: 10px;
+$popconfirm-arrow-color: $border-color-base;
+$popconfirm-arrow-outer-width: ;
+$popconfirm-arrow-outer-color: $border-color-base;
+$popconfirm-border-right-color: $border-color-base;
+$popconfirm-fallback-border-color: #fff;
