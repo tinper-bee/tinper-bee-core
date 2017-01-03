@@ -471,8 +471,8 @@ $tile-width: 100%;
 $tile-default-border-color: #e9e9e9;
 $tile-default-hover-shadow-color: rgba(0, 0, 0, 0.2);
 
-$tile-primary-border-color: $button-primary-color-alt;
-$tile-primary-hover-shadow-color: $button-primary-hover-color-alt;
+$tile-primary-border-color: $button-primary-color;
+$tile-primary-hover-shadow-color: $button-primary-hover-color;
 
 $tile-danger-border-color: $button-danger-color;
 $tile-danger-hover-shadow-color: $button-danger-hover-color;
@@ -812,6 +812,12 @@ $badge-danger-bg:$brand-danger;
 
 $badge-dark-color:#FFFFFF;
 $badge-dark-bg:$brand-dark;
+
+$badge-font-size: 12px;
+$badge-font-dataicon-size: 10px;
+$badge-default-dataicon-fontcolor: #757575;
+$badge-default-dataicon-bgcolor: #fff;
+$badge-default-dataicon-bordercolor: #ccc;
 
 // labels
 $tag-padding: .25em .6em .25em;
