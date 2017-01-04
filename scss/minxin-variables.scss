@@ -554,6 +554,18 @@ $color-warning-opacity:unquote("rgba(#{$palette-orange-500}, 0.7)") !default;
 $color-danger-opacity:unquote("rgba(#{$palette-red-500}, 0.7)") !default;
 $color-dark-opacity:unquote("rgba(#{$palette-grey-700}, 0.7)") !default;
 
+
+$progress-sm-height: 10px;
+$progress-xs-height: 5px;
+$progress-xs-width: 170px;
+$progress-default-height: 20px;
+$progress-sm-lable-font-size: 10px;
+$progress-sm-lable-line-height: 10px;
+$progress-xs-lable-line-height: 8px;
+$progress-xs-lable-margin-left: 140px;
+$progress-xs-lable-font-size: 10px;
+$progress-xs-lable-color: #000;
+
 /*  Radio  */
 
 $radio-color: unquote("rgb(#{$color-primary})") !default;
