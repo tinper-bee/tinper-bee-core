@@ -303,6 +303,22 @@ $font-size-sm:1.2 * $unit;
 
 
 /* UText */
+
+
+$form-control-border-radius: 3px;
+$form-control-default-font-size: 1.4rem;
+$form-control-lg-font-size: 1.4rem;
+$form-control-sm-font-size: 1.2rem;
+$form-control-default-height: 30px;
+$form-control-lg-height: 38px;
+$form-control-sm-height: 24px;
+$form-control-color: #424242;
+$form-control-bg-color: #fff;
+$form-control-border-color: #bdbdbd;
+$form-control-disable-bg-color: #eee;
+$form-control-disable-color: #BDBDBD;
+$form-control-disable-border-color: #e0e0e0;
+
 $input-text-background-color: transparent !default;
 $input-text-label-color: unquote("rgba(#{$color-black}, 0.26)") !default;
 $input-text-bottom-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
