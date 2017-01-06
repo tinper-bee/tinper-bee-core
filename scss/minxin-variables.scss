@@ -607,53 +607,7 @@ $radio-warning-bg:            $brand-warning;
 $radio-danger-bg:             $brand-danger;
 $radio-dark-bg:               $brand-dark;
 
-/* Switch  */
 
-$switch-color: unquote("rgb(#{$color-primary})") !default;
-$switch-faded-color: unquote("rgba(#{$color-primary}, 0.26)") !default;
-$switch-thumb-color: #fff !default;
-$switch-track-color: unquote("rgb(#{$color-primary})") !default;
-
-$switch-off-thumb-color: unquote("rgb(#{$palette-grey-50})") !default;
-$switch-off-track-color: unquote("rgb(#{$color-white})") !default;
-$switch-off-track-color-IE8: unquote("rgb(#{$color-black})") !default;
-$switch-disabled-thumb-color: unquote("rgb(#{$palette-grey-400})") !default;
-$switch-disabled-track-color: unquote("rgba(#{$color-black}, 0.12)") !default;
-
-$switch-label-font-size: 13px !default;
-$switch-label-height: 24px !default;
-$switch-track-height: 21px !default;
-$switch-track-length: 40px !default;
-$switch-thumb-size: 20px !default;
-$switch-track-top: ($switch-label-height - $switch-track-height) / 2 !default;
-$switch-thumb-top: ($switch-label-height - $switch-thumb-size) / 2 !default;
-$switch-ripple-size: $switch-label-height * 2 !default;
-$switch-helper-size: 8px !default;
-
-$switch-primary-bg:  $brand-primary;
-$switch-success-bg:  $brand-success;
-$switch-info-bg:  $brand-info;
-$switch-warning-bg: $brand-warning;
-$switch-danger-bg: $brand-danger;
-$switch-dark-bg:  $brand-dark;
-
-//特大号switch
-$switch-width-lg: 66px;
-$switch-height-lg: 36px;
-$switch-border-radius-lg: 36px;
-$switch-border-left-lg: 31px;
-
-//默认尺寸switch
-$switch-width-default: 45px;
-$switch-height-default: 24px;
-$switch-border-radius-default: 24px;
-$switch-border-left-default: 22px;
-
-//小尺寸switch
-$switch-width-sm: 33px;
-$switch-height-sm: 20px;
-$switch-border-radius-sm: 20px;
-$switch-border-left-sm: 14px;
 
 /* loading */
 
@@ -1311,3 +1265,45 @@ $loading-line-center-top:-30px;
 $loading-line-center-left:-25px;
 $loading-line-center-lg-top:-50px;
 $loading-line-center-lg-left:-30px;
+
+
+//switch
+
+/*color*/
+$switch-border-color: $gray-lighter;
+$switch-back-color: $gray-lighter;
+$switch-checked-borColor: $brand-primary;
+$switch-checked-backColor: $brand-primary;
+
+/* border-radius of different state switch   */
+$switch-border-radius: 20px;
+$switch-border-radius-after: 18px;
+
+/* width height line-height  of the three switches */
+$switch-width: (default:44px, small:32px, large:60px);
+$switch-height: (default:22px, small:16px, large:30px);
+$switch-lineHeight: (default:20px, small:12px, large:12px);
+
+/* style of u-switch-inner  */
+$switch-inner-fontSize: (default:12px, small:10px, large:18px);
+$switch-inner-left: (default:22px, small:16px, large:30px);
+$switch-inner-largeTop: 8px;
+
+/* style of u-switch:active:after  */
+$switch-active-width: (default:24px, small:16px, large:32px);
+
+/* style of u-switch:after  */
+$switch-after-widthHeight: 18px;
+$switch-after-widthHeight-sm: 14px;
+$switch-after-widthHeight-lg: 26px;
+$switch-after-top: 1px;
+$switch-after-top-sm: 0;
+$switch-after-top-lg: 1px;
+$switch-after-left: 0;
+$switch-after-left-sm: 0;
+$switch-after-left-lg: 0;
+
+/* style of u-switch.is-checked */
+$switch-checked-innerLeft: (default:8px, small:4px, large:8px);
+$switch-checked-afterLeft: (default:24px, small:16px, large:32px);
+$switch-checked-activeLeft: (default:16px, small:10px, large:26px);
