@@ -109,6 +109,7 @@ $zindex-modal:            1700;
 $zindex-modal-background: 1600;
 $zIndex-notification: 1560;
 $zIndex-message: 1550;
+$zIndex-popconfirm: 1540;
 $zIndex-popover: 1540;
 $zIndex-tooltip: 1530;
 $zIndex-alert: 1510;
@@ -1210,7 +1211,7 @@ $message-background: $gray-darkest;
 //popconfirm
 
 $popconfirm-max-width: 300px;
-$zIndex-popconfirm: 1540;
+
 $popconfirm-dark-bg: $gray-darkest;
 $popconfirm-fallback-dark-border-color: $gray-darkest;
 $popconfirm-margin: 10px;
@@ -1222,3 +1223,74 @@ $popconfirm-arrow-outer-width: ;
 $popconfirm-arrow-outer-color: $border-color-base;
 $popconfirm-border-right-color: $border-color-base;
 $popconfirm-fallback-border-color: #fff;
+
+
+//dropdown
+
+$dropdown-item-hover-bg-color:  unquote("rgb(#{$palette-grey-100})");
+$dropdown-item-divier-bg-color: $gray-lighter;
+$dropdown-border-color: $border-color-base;
+$dropdown-border-radius:3px;
+$dropdown-shadow: 0 1px 5px $dropdown-border-color;
+$dropdown-margin: 5px 0 0 0;
+$dropdown-menu-item-padding: 0px 16px 0 28px;
+$dropdown-menu-font-size: 12px;
+$dropdown-menu-item-height: 42px;
+$dropdown-menu-item-light-height: 42px;
+$dropdown-menu-title-font-size: 12px;
+$dropdown-menu-title-color: #999;
+$dropdown-menu-title-padding:8px 16px;
+$dropdown-menu-title-line-height: 1.5;
+
+
+//loading
+
+$loading-loadprimary: rgb(63, 81, 181);
+$loading-loadsuccess: #4caf50;
+$loading-loadwarn: rgb(255, 152, 0);
+$loading-lineanimating: (
+        1:line-scale 1s 0.1s infinite cubic-bezier(.2, .68, .18, 1.08),
+        2:line-scale 1s 0.2s infinite cubic-bezier(.2, .68, .18, 1.08),
+        3:line-scale 1s 0.3s infinite cubic-bezier(.2, .68, .18, 1.08),
+        4:line-scale 1s 0.4s infinite cubic-bezier(.2, .68, .18, 1.08),
+        5:line-scale 1s 0.5s infinite cubic-bezier(.2, .68, .18, 1.08)
+);
+$loading-linebackcolor: (
+        1: #F44336,
+        2: #7ED321,
+        3: #0084FF,
+        4: #FF9800,
+        5: #D0021B
+);
+$loading-back-width: 120px;
+$loading-back-height:110px;
+$loading-desc-font-size: 16px;
+$loading-desc-color: #cecece;
+$loading-rotate-bor:#c2c3c5;
+
+/*两种加载的尺寸 width height*/
+$loading-rotate-sm-size: 25px;
+$loading-rotate-size:40px;
+$loading-rotate-lg-size:60px;
+
+$loading-line-sm-width: 4px;
+$loading-line-sm-height:35px;
+$loading-line-width:6px;
+$loading-line-height:50px;
+$loading-line-lg-width:8px;
+$loading-line-lg-height:90px ;
+
+/*居中位置top left*/
+$loading-center-top:50%;
+$loading-center-left:50%;
+
+$loading-rotate-center-sm: -15px ;
+$loading-rotate-center:-22px;
+$loading-rotate-center-lg:-35px ;
+
+$loading-line-center-sm-top: -22px;
+$loading-line-center-sm-left:-20px;
+$loading-line-center-top:-30px;
+$loading-line-center-left:-25px;
+$loading-line-center-lg-top:-50px;
+$loading-line-center-lg-left:-30px;
