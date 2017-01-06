@@ -1307,3 +1307,10 @@ $switch-after-left-lg: 0;
 $switch-checked-innerLeft: (default:8px, small:4px, large:8px);
 $switch-checked-afterLeft: (default:24px, small:16px, large:32px);
 $switch-checked-activeLeft: (default:16px, small:10px, large:26px);
+
+$switch-primary-bg: $brand-primary;
+$switch-dark-bg: $brand-dark;
+$switch-success-bg: $brand-success;
+$switch-warning-bg: $brand-warning;
+$switch-danger-bg: $brand-danger;
+$switch-info-bg: $brand-info;
