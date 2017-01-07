@@ -604,6 +604,34 @@ $radio-warning-bg:            $brand-warning;
 $radio-danger-bg:             $brand-danger;
 $radio-dark-bg:               $brand-dark;
 
+
+$radio-disabled-color: rgba(0, 0, 0, 0.25);
+$radio-disabled-bg: #f7f7f7;
+$radio-diabled-border-color: #d9d9d9;
+
+$radio-border-color: #d9d9d9;
+$radio-bg-color: #fff;
+$radio-color: rgba(0, 0, 0, 0.65);
+
+$radio-checked-bg-color: #fff;
+$radio-checked-color: #108ee9;
+$radio-checked-border-color: $radio-checked-color;
+
+$radio-icon-height: 18px;
+$radio-icon-width: 18px;
+$radio-icon-checked-height: 8px;
+$radio-icon-checked-width: 8px;
+
+$radio-button-lg-height:32px;
+$radio-button-lg-line-height:30px;
+
+$radio-button-sm-height:22px;
+$radio-button-sm-line-height:20px;
+
+$radio-button-height: 28px;
+$radio-button-line-height: 26px;
+
+
 /* Switch  */
 
 $switch-color: unquote("rgb(#{$color-primary})") !default;
