@@ -1269,7 +1269,22 @@ $popconfirm-arrow-outer-color: $border-color-base;
 $popconfirm-border-right-color: $border-color-base;
 $popconfirm-fallback-border-color: #fff;
 
+//select 
 
+$select-bg-color: #fff;
+$select-border-color: #d9d9d9;
+$select-border-radius: 4px;
+$select-color: #666;
+$select-font-size: 12px;
+$select-dropdown-color: #666;
+$select-dropdown-bg-color: #fff;
+$select-dropdown-hover-bg: #e7f4fd;
+$select-dropdown-selected-bg: #f7f7f7;
+$select-dropdown-selected-color: #666;
+$select-dropwdown-item-padding: 7px 16px;
+$select-disabled-color: #ccc;
+$select-disabled-bg: #f7f7f7;
+$select-disabled-border-color: #d9d9d9;
 //dropdown
 
 $dropdown-item-hover-bg-color:  unquote("rgb(#{$palette-grey-100})");
