@@ -349,6 +349,17 @@ $input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default
 $input-text-focus-border-color:unquote("rgb(#{$palette-u-blue-400})") !default;
 $input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default
 
+/* FormGroup */
+
+$error-input-border:$brand-danger;
+$warning-input-border:$brand-warning;
+$success-input-border:$brand-success;
+$success-addon-bg: $brand-light-success;
+$warning-addon-bg: $brand-light-warning;
+$error-addon-bg: $brand-light-danger;
+$form-group-margin-top: 15px;
+$form-group-margin-bottom: 15px;
+
 /*  Navlayout  */
 
 $layout-nav-color: unquote("rgb(#{$palette-grey-100})") !default;
