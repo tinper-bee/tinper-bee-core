@@ -1,5 +1,5 @@
 
-/* Typography */
+// Typography
 
 @mixin typo-preferred-font($usePreferred: true) {
   @if $usePreferred {
@@ -191,7 +191,7 @@
   }
 }
 
-/* Shadows */
+// Shadows
 
 // Focus shadow mixin.
 @mixin focus-shadow() {
@@ -243,7 +243,7 @@
   0 24/10 * $unit 38/10 * $unit  3/10 * $unit rgba(0, 0, 0, $shadow-key-umbra-opacity);
 }
 
-/* Animations */
+//Animations
 
 @mixin material-animation-fast-out-slow-in($duration:0.2s) {
   transition-duration: $duration;
@@ -525,7 +525,7 @@
 @mixin text-truncate() {
   overflow: hidden;
   text-overflow: ellipsis;
-  word-wrap: normal; /* for IE */
+  word-wrap: normal; //for IE
   white-space: nowrap;
 }
 
