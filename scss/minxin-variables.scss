@@ -10,12 +10,12 @@
   @return $number / ($number * 0 + 1);
 }
 $unit: 1rem !default;
-/*  IMAGES  */
+//  IMAGES
 $image_path: '/images' !default;
 
 
 
-/* 默认颜色 */
+//默认颜色
 $trim-color-classes: false !default;
 
 @import "minxin-themeColors";
@@ -64,7 +64,7 @@ $inverse: unquote("rgb(#{$color-white})") !default;
 $border-color-base:       $gray-lighter;
 $line-height-base:        1.57142857;
 
-/* 客户化 */
+// 客户化
 @if $styleguide-generate-template == true {
   $color-primary: '$color-primary';
   $color-primary-dark: '$color-primary-dark';
@@ -74,20 +74,10 @@ $line-height-base:        1.57142857;
 }
 
 
-/* 波纹效果 */
-$ripple-bg-color: unquote("rgb(#{$color-dark-contrast})") !default;
-
-/*贝塞尔曲线动画 */
-$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
-$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
-$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
-$animation-curve-default: $animation-curve-fast-out-slow-in !default;
-$animation-duration: .35s;
-$animation-delay: $animation-duration / 5;
 
 
 
-/* 阴影 */
+// 阴影
 
 $shadow-key-umbra-opacity: 0.2 !default;
 $shadow-key-penumbra-opacity: 0.14 !default;
@@ -122,7 +112,7 @@ $zindex-header:           1100;
 $zindex-footer:           1000;
 
 
-/* ==========  文本字体  ========== */
+// 文本字体
 
 //todo
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
@@ -134,8 +124,7 @@ $target-elements-directly: true !default;
 $global-selected-color: $palette-blue-100;
 
 
-/* 控件 */
-//** Disabled cursor for form controls and buttons.
+// 控件
 $cursor-disabled:   not-allowed;
 
 
@@ -204,7 +193,7 @@ $brand-light-warning: unquote("rgb(#{$palette-orange-100})") !default;
 $brand-light-news: unquote("rgb(#{$palette-blue-100})") !default;
 $brand-light-danger:  unquote("rgb(#{$palette-red-100})") !default;
 
-/* 不同背景下对应的文字颜色 */
+//不同背景下对应的文字颜色
 
 $color-news: unquote("rgb(#{$palette-blue-500})") !default;
 $color-success: unquote("rgb(#{$palette-green-500})") !default;
@@ -216,7 +205,7 @@ $color-danger: unquote("rgb(#{$palette-red-500})") !default;
 
 $default-border-radius: 4px;
 
-/* UButton */
+// UButton
 
 // Default button colors.
 $button-default-color: $brand-default;
@@ -305,7 +294,7 @@ $font-size-sm:1.2 * $unit;
 
 
 
-/* UText */
+// UText
 
 
 $form-control-border-radius: 3px;
@@ -349,7 +338,7 @@ $input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default
 $input-text-focus-border-color:unquote("rgb(#{$palette-u-blue-400})") !default;
 $input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default
 
-/*  Navlayout  */
+// Navlayout
 
 $layout-nav-color: unquote("rgb(#{$palette-grey-100})") !default;
 
@@ -400,34 +389,34 @@ $layout-tab-mobile-padding: 12px !default;
 $layout-tab-desktop-padding: 24px !default;
 $layout-tab-highlight-thickness: 2px !default;
 
-/* gridlayout */
+// gridlayout
 
 // Extra small screen / phone
 //$screen-xs:                  480px;
 
 $screen-xs-min:              480px;
-//** Deprecated `@screen-phone` as of v3.0.1
+// Deprecated `@screen-phone` as of v3.0.1
 //@screen-phone:               @screen-xs-min;
 
 // Small screen / tablet
-//** Deprecated `@screen-sm` as of v3.0.1
+// Deprecated `@screen-sm` as of v3.0.1
 //@screen-sm:                  768px;
 $screen-sm-min:              768px;
-//** Deprecated `@screen-tablet` as of v3.0.1
+// Deprecated `@screen-tablet` as of v3.0.1
 //@screen-tablet:              @screen-sm-min;
 
 // Medium screen / desktop
-//** Deprecated `@screen-md` as of v3.0.1
+// Deprecated `@screen-md` as of v3.0.1
 //@screen-md:                  992px;
 $screen-md-min:              992px;
-//** Deprecated `@screen-desktop` as of v3.0.1
+// Deprecated `@screen-desktop` as of v3.0.1
 //@screen-desktop:             @screen-md-min;
 
 // Large screen / wide desktop
-//** Deprecated `@screen-lg` as of v3.0.1
+// Deprecated `@screen-lg` as of v3.0.1
 //@screen-lg:                  1200px;
 $screen-lg-min:              1200px;
-//** Deprecated `@screen-lg-desktop` as of v3.0.1
+// Deprecated `@screen-lg-desktop` as of v3.0.1
 //@screen-lg-desktop:          @screen-lg-min;
 $screen-xs-max: ($screen-sm-min - 1 );
 
@@ -438,35 +427,35 @@ $screen-md-max: ($screen-lg-min - 1 );
 
 
 
-//** Number of columns in the grid.
+// Number of columns in the grid.
 $grid-columns:              12;
-//** Padding between columns. Gets divided in half for the left and right.
+// Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width:         30px;
 // Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
+// Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     768px;
-//** Point at which the navbar begins collapsing.
+// Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 
 // Small screen / tablet
 $container-tablet:             (720px + $grid-gutter-width);
-//** For `@screen-sm-min` and up.
+// For `@screen-sm-min` and up.
 $container-sm:                 $container-tablet;
 
 // Medium screen / desktop
 $container-desktop:            (940px + $grid-gutter-width);
-//** For `@screen-md-min` and up.
+// For `@screen-md-min` and up.
 $container-md:                 $container-desktop;
 
 // Large screen / wide desktop
 $container-large-desktop:      (1140px + $grid-gutter-width);
-//** For `@screen-lg-min` and up.
+// For `@screen-lg-min` and up.
 $container-lg:                 $container-large-desktop;
 
 
 
-/* menu */
+// menu
 
 $default-dropdown-bg-color: unquote("rgb(#{$color-white})") !default;
 $menu-expand-duration: 0.3s !default;
@@ -484,7 +473,7 @@ $default-item-divider-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 // Disabled Button Colors
 $disabled-item-text-color: unquote("rgb(#{$palette-grey-400})") !default;
 
-/* Tile */
+// Tile
 $tile-width: 100%;
 
 $tile-default-border-color: #e9e9e9;
@@ -505,7 +494,7 @@ $tile-success-hover-shadow-color: $button-success-hover-color;
 $tile-info-border-color: $button-info-color;
 $tile-info-hover-shadow-color: $button-info-hover-color;
 
-/* Alert */
+// Alert
 $alert-news-bg:  $brand-light-news;
 $alert-success-bg:  $brand-light-success;
 $alert-info-bg:  $brand-light-info;
@@ -534,7 +523,7 @@ $alert-close-font-size: 21px;
 $alert-close-opacity: .2;
 $alert-close-font-weight: 700;
 
-/* Checkbox */
+//Checkbox
 
 $checkbox-color: unquote("rgb(#{$color-primary})") !default;
 $checkbox-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
@@ -585,7 +574,7 @@ $progress-xs-lable-margin-left: 140px;
 $progress-xs-lable-font-size: 10px;
 $progress-xs-lable-color: #000;
 
-/*  Radio  */
+// Radio
 
 $radio-color: unquote("rgb(#{$color-primary})") !default;
 $radio-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
@@ -634,56 +623,10 @@ $radio-button-height: 28px;
 $radio-button-line-height: 26px;
 
 
-/* Switch  */
-
-$switch-color: unquote("rgb(#{$color-primary})") !default;
-$switch-faded-color: unquote("rgba(#{$color-primary}, 0.26)") !default;
-$switch-thumb-color: #fff !default;
-$switch-track-color: unquote("rgb(#{$color-primary})") !default;
-
-$switch-off-thumb-color: unquote("rgb(#{$palette-grey-50})") !default;
-$switch-off-track-color: unquote("rgb(#{$color-white})") !default;
-$switch-off-track-color-IE8: unquote("rgb(#{$color-black})") !default;
-$switch-disabled-thumb-color: unquote("rgb(#{$palette-grey-400})") !default;
-$switch-disabled-track-color: unquote("rgba(#{$color-black}, 0.12)") !default;
-
-$switch-label-font-size: 13px !default;
-$switch-label-height: 24px !default;
-$switch-track-height: 21px !default;
-$switch-track-length: 40px !default;
-$switch-thumb-size: 20px !default;
-$switch-track-top: ($switch-label-height - $switch-track-height) / 2 !default;
-$switch-thumb-top: ($switch-label-height - $switch-thumb-size) / 2 !default;
-$switch-ripple-size: $switch-label-height * 2 !default;
-$switch-helper-size: 8px !default;
-
-$switch-primary-bg:  $brand-primary;
-$switch-success-bg:  $brand-success;
-$switch-info-bg:  $brand-info;
-$switch-warning-bg: $brand-warning;
-$switch-danger-bg: $brand-danger;
-$switch-dark-bg:  $brand-dark;
-
-//特大号switch
-$switch-width-lg: 66px;
-$switch-height-lg: 36px;
-$switch-border-radius-lg: 36px;
-$switch-border-left-lg: 31px;
-
-//默认尺寸switch
-$switch-width-default: 45px;
-$switch-height-default: 24px;
-$switch-border-radius-default: 24px;
-$switch-border-left-default: 22px;
-
-//小尺寸switch
-$switch-width-sm: 33px;
-$switch-height-sm: 20px;
-$switch-border-radius-sm: 20px;
-$switch-border-left-sm: 14px;
 
 
-/* loading */
+
+//loading
 
 $loading-color-1: unquote("rgb(#{$palette-blue-400})") !default;
 $loading-color-2: unquote("rgb(#{$palette-red-500})") !default;
@@ -705,18 +648,18 @@ $loading-arc-start-rot: 216deg !default;
 $loading-duration: 360 * $loading-arc-time / (
     strip-units($loading-arc-start-rot + (360deg - $loading-arc-size)));
 
-/* datetimepicker */
+// datetimepicker
 
 $date-bg-color: unquote("rgb(#{$color-primary})") !default;
 
-/* message */
+// message
 $snackbar-color: unquote("rgb(#{$color-white})") !default;
 $snackbar-background-color: unquote("rgb(#{$color-primary})") !default;
 $snackbar-color-cancel: unquote("rgb(#{$palette-red-500})") !default;
 $snackbar-color-accept: unquote("rgb(#{$palette-green-500})") !default;
 $snackbar-color-warning: unquote("rgb(#{$palette-lime-200})") !default;
 
-/* DATA TABLE */
+// DATA TABLE
 
 $data-table-font-size: 13px !default;
 $data-table-header-font-size: 12px !default;
@@ -759,7 +702,7 @@ $table-bg-accent:               unquote("rgba(#{$palette-grey-200},.3)") !defaul
 
 
 
-/* tooltip*/
+// tooltip
 $tooltip-max-width: 200px;
 $tooltip-color: #fff;
 $tooltip-bg: #000;
@@ -769,7 +712,7 @@ $tooltip-arrow-color: $tooltip-bg;
 $tooltip-opacity: .9;
 
 
-/* 进度条 */
+// 进度条
 $bar-height: 4px !default;
 $progress-main-color: unquote("rgb(#{$color-primary})") !default;
 $progress-secondary-color: unquote("rgba(#{$color-primary-contrast}, 0.7)") !default;
@@ -780,7 +723,7 @@ $progress-buffer-bar-border:unquote("rgb(#{$palette-u-gray-600})") !default;
 // Tabs
 $layout-header-tab-highlight: unquote("rgb(#{$color-accent})") !default;
 
-/* ==========  Content Tabs  ========== */
+
 
 $tab-highlight-color: unquote("rgb(#{$color-primary})") !default;
 $tab-text-color: unquote("rgba(#{$color-black}, 0.54)") !default;
@@ -789,9 +732,8 @@ $tab-border-color: unquote("rgb(#{$palette-grey-300})") !default;
 
 
 
-/* CARD */
+//CARD
 
-/* Card dimensions */
 $card-width: 330px !default;
 $card-height: 200px !default;
 $card-font-size: 13px !default;
@@ -817,11 +759,11 @@ $card-actions-font-size: 13px !default;
 $card-title-text-font-weight: 300 !default;
 $card-z-index: 1 !default;
 
-/* Cover image */
+// Cover image
 $card-cover-image-height: 186px !default;
 $card-background-image-url: '' !default;
 
-/* ==========  Card  ========== */
+
 
 $card-background-color: unquote("rgb(#{$color-white})") !default;
 $card-text-color: unquote("rgb(#{$color-black})") !default;
@@ -830,7 +772,7 @@ $card-supporting-text-text-color: unquote("rgba(#{$color-black}, 0.54)") !defaul
 $card-border-color: rgba(0,0,0,0.1) !default;
 $card-subtitle-color: unquote("rgba(#{$color-black}, 0.54)") !default;
 
-/* ============ Forms ============*/
+
 $input-border:unquote("rgb(#{$palette-u-gray-500})");
 $input-border-focus:unquote("rgb(#{$color-primary})");
 $input-border-disabled:unquote("rgb(#{$palette-u-gray-100})");
@@ -844,7 +786,7 @@ $form-control-feedback-color:unquote("rgb(#{$palette-u-gray-700})");
 $form-validate-error-color:unquote("rgb(#{$palette-u-red-600})");
 
 
-/* BADGE */
+// BADGE
 $badge-font-size: 12px !default;
 $badge-color: unquote("rgb(#{$color-accent-contrast})") !default;
 $badge-color-inverse: unquote("rgb(#{$color-accent})") !default;
@@ -1269,7 +1211,7 @@ $popconfirm-arrow-outer-color: $border-color-base;
 $popconfirm-border-right-color: $border-color-base;
 $popconfirm-fallback-border-color: #fff;
 
-//select 
+//select
 
 $select-bg-color: #fff;
 $select-border-color: #d9d9d9;
@@ -1338,7 +1280,7 @@ $loading-desc-font-size: 16px;
 $loading-desc-color: #cecece;
 $loading-rotate-bor:#c2c3c5;
 
-/*两种加载的尺寸 width height*/
+//两种加载的尺寸 width height
 $loading-rotate-sm-size: 25px;
 $loading-rotate-size:40px;
 $loading-rotate-lg-size:60px;
@@ -1350,7 +1292,7 @@ $loading-line-height:50px;
 $loading-line-lg-width:8px;
 $loading-line-lg-height:90px ;
 
-/*居中位置top left*/
+//居中位置top left
 $loading-center-top:50%;
 $loading-center-left:50%;
 
@@ -1368,30 +1310,31 @@ $loading-line-center-lg-left:-30px;
 
 //switch
 
-/*color*/
+
+//color
 $switch-border-color: $gray-lighter;
 $switch-back-color: $gray-lighter;
 $switch-checked-borColor: $brand-primary;
 $switch-checked-backColor: $brand-primary;
 
-/* border-radius of different state switch   */
+// border-radius of different state switch
 $switch-border-radius: 20px;
 $switch-border-radius-after: 18px;
 
-/* width height line-height  of the three switches */
+// width height line-height  of the three switches
 $switch-width: (default:44px, small:32px, large:60px);
 $switch-height: (default:22px, small:16px, large:30px);
 $switch-lineHeight: (default:20px, small:12px, large:12px);
 
-/* style of u-switch-inner  */
+// style of u-switch-inner
 $switch-inner-fontSize: (default:12px, small:10px, large:18px);
 $switch-inner-left: (default:22px, small:16px, large:30px);
 $switch-inner-largeTop: 8px;
 
-/* style of u-switch:active:after  */
+// style of u-switch:active:after
 $switch-active-width: (default:24px, small:16px, large:32px);
 
-/* style of u-switch:after  */
+// style of u-switch:after
 $switch-after-widthHeight: 18px;
 $switch-after-widthHeight-sm: 14px;
 $switch-after-widthHeight-lg: 26px;
@@ -1402,7 +1345,7 @@ $switch-after-left: 0;
 $switch-after-left-sm: 0;
 $switch-after-left-lg: 0;
 
-/* style of u-switch.is-checked */
+// style of u-switch.is-checked
 $switch-checked-innerLeft: (default:8px, small:4px, large:8px);
 $switch-checked-afterLeft: (default:24px, small:16px, large:32px);
 $switch-checked-activeLeft: (default:16px, small:10px, large:26px);
