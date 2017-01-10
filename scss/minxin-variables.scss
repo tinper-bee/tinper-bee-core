@@ -1368,3 +1368,63 @@ $switch-success-bg: $brand-success;
 $switch-warning-bg: $brand-warning;
 $switch-danger-bg: $brand-danger;
 $switch-info-bg: $brand-info;
+
+//tabs
+
+$tabs-basic-back: #f5f5f5;
+$tabs-cls-color: #666;
+$tabs-cls-width: 900px;
+$tabs-simple-conHeight: 120px;
+$tabs-simple-conPad: 16px;
+$tabs-simple-conWidth: 100%;
+
+$tabs-fontSize: (simple:14px, fill:14px, turn:14px, slide:14px, fade:14px, fadeup:14px);
+$tabs-lineHeight: (simple:2.3, fill:2.3, turn:2.3, slide:2.3, fade:2.3, fadeup:2.3);
+$tabs-marginBottom: -1px;
+
+$tabs-simple-tab: (padding:0 16px, margin:5px 0 5px 5px, radius:0 0 0 0, back:#fff);
+$tabs-simple-tabBorder: 1px solid #fff;
+$tabs-simple-activeBorder: 1px solid $brand-primary;
+$tabs-simple-activeColor: #fff;
+$tabs-simple-activeBorBottom: 1px solid $brand-primary;
+$tabs-simple-activeTopRadius: 5px;
+$tabs-simple-fontWeight: bold;
+
+$tabs-fill-tab: (padding: 0 16px, color:#666, back:#fff, afterBack:#d2d8d6, activeBack:$brand-primary);
+$tabs-fill-tab-maright: 5px;
+$tabs-fill-after-top: 0;
+$tabs-fill-after-left: 0;
+$tabs-fill-after-width: 100%;
+$tabs-fill-after-height: 100%;
+$tabs-fill-fontWeight: bold;
+
+$tabs-turn-tab: (padding: 0 16px, color:#fff, back:#f5f5f5, afterBack:$brand-primary, activeBack:$brand-primary);
+$tabs-turn-after-top: 0;
+$tabs-turn-after-left: 0;
+$tabs-turn-after-width: 100%;
+$tabs-turn-after-height: 100%;
+$tabs-turn-beforeBot: 32px;
+$tabs-turn-beforeRight: 15px;
+$tabs-turn-fontWeight: bold;
+$tabs-moveleft-conHeight: 120px;
+$tabs-moveleft-conPad: 16px;
+
+$tabs-slide-tabs: (width:25%, padding: 0 16px, back:#f5f5f5);
+$tabs-slide-child-bottom: 0;
+$tabs-slide-child-left: 0;
+$tabs-slide-child-height: 4px;
+$tabs-slide-child-back: $brand-primary;
+$tabs-slide-fontWeight: bold;
+
+$tabs-fade-tab: (marLeft:5px, marTop:5px, color:#666, padding:0 16px, radius:0 0 0 0);
+$tabs-fade-conPad: 16px;
+$tabs-fade-conBor: 5px;
+
+$tabs-fadeup-tab: (marTop:5px, color:#666, padding:0 16px, radius:0 0 0 0);
+$tabs-fadeup-top: -5px;
+$tabs-fadeup-left: 0;
+$tabs-fadeup-width: 100%;
+$tabs-fadeup-height: 100%;
+$tabs-fadeup-color: #666;
+$tabs-fadeup-conHeight: 120px;
+$tabs-fadeup-conPad: 16px;
