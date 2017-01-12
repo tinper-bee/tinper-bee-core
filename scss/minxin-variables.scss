@@ -64,14 +64,6 @@ $inverse: unquote("rgb(#{$color-white})") !default;
 $border-color-base:       $gray-lighter;
 $line-height-base:        1.57142857;
 
-// 客户化
-@if $styleguide-generate-template == true {
-  $color-primary: '$color-primary';
-  $color-primary-dark: '$color-primary-dark';
-  $color-accent: '$color-accent';
-  $color-primary-contrast: '$color-primary-contrast';
-  $color-accent-contrast: '$color-accent-contrast';
-}
 
 
 
@@ -121,7 +113,7 @@ $text-link-color: unquote("rgb(#{$color-accent})") !default;
 $target-elements-directly: true !default;
 
 
-$global-selected-color: $palette-blue-100;
+$global-selected-color:  unquote("rgb(#{$palette-blue-100})") !default;
 
 
 // 控件
