@@ -1,6 +1,6 @@
 {
-  "presets": ["es2015-loose", "stage-1", "stage-3"],
-  "plugins": ["transform-object-assign"],
+  "presets": ["es2015-loose", "stage-1"],
+  "plugins": ["transform-object-assign", "transform-object-entries"],
 
   "env": {
     "test": {
