@@ -102,7 +102,7 @@ $zindex-dropdown:         1200;
 $zindex-navbar:           1200;
 $zindex-header:           1100;
 $zindex-footer:           1000;
-
+$zindex-backtop:2000;
 
 // 文本字体
 
@@ -1210,7 +1210,7 @@ $popconfirm-title-bg: #fff;
 $popconfirm-border-color:$border-color-base;
 $popconfirm-arrow-width: 10px;
 $popconfirm-arrow-color: $border-color-base;
-$popconfirm-arrow-outer-width: ;
+$popconfirm-arrow-outer-width: 0px;
 $popconfirm-arrow-outer-color: $border-color-base;
 $popconfirm-border-right-color: $border-color-base;
 $popconfirm-fallback-border-color: #fff;
@@ -1426,3 +1426,9 @@ $tabs-fadeup-conPad: 16px;
 $rate-star-default-color:$gray-lightest;
 $rate-star-active-color:$color-warning;
 $rate-star-marginRight:8px;
+//backtop
+$back-top-padding:5px;
+$backtop-background:unquote("rgb(#{$palette-u-gray-600})") !default;
+$backtop-color:unquote("rgb(#{$color-white})") !default;
+$backtop-right:10px;
+$backtop-bottom:10px;
