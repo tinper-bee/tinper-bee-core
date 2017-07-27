@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee-core",
-  "version": "0.1.5",
+  "version": "0.2.5",
   "description": "style core and js util for tinper-bee",
   "main": "lib/index.js",
   "engines": {
