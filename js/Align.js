@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
+import createReactClass from 'create-react-class';
 import align from 'dom-align';
 import addEventListener from './addEventListener';
 //import isWindow from './isWindow';
