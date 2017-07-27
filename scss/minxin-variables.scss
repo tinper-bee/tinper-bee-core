@@ -625,8 +625,8 @@ $radio-icon-width: 18px;
 $radio-icon-checked-height: 8px;
 $radio-icon-checked-width: 8px;
 
-$radio-button-lg-height:32px;
-$radio-button-lg-line-height:30px;
+$radio-button-lg-height:42px;
+$radio-button-lg-line-height:26px;
 
 $radio-button-sm-height:22px;
 $radio-button-sm-line-height:20px;
@@ -1218,7 +1218,7 @@ $popconfirm-title-bg: #fff;
 $popconfirm-border-color:$border-color-base;
 $popconfirm-arrow-width: 10px;
 $popconfirm-arrow-color: $border-color-base;
-$popconfirm-arrow-outer-width: ;
+$popconfirm-arrow-outer-width: 0;
 $popconfirm-arrow-outer-color: $border-color-base;
 $popconfirm-border-right-color: $border-color-base;
 $popconfirm-fallback-border-color: #fff;
