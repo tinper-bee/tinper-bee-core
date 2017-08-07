@@ -332,7 +332,11 @@
         border-color: $bg-active-color;
     }
 }
-
+//按钮颜色
+@mixin timeline-styles-variant($border-color) {
+        border-color: $border-color;
+        color: $border-color;
+}
 //按钮颜色
 @mixin button-styles-variant($text-color,$bg-color,$bg-hover-color,$bg-active-color) {
 
