@@ -71,3 +71,86 @@ tinper-bee组件库的核心样式及公用方法库
     - 阴影
     - 常用z-index值设定
     - UI组件的预设
+
+
+
+### js方法
+
+#### keyCode对象
+
+引入方法：
+
+```
+import keyCode from 'tinper-bee-core/lib/keyCode';
+
+//或者
+
+import { keyCode } from 'tinper-bee-core';
+
+```
+
+方法：
+
+- isTextModifyingKeyEvent 验证是否是特殊按键或组合按键
+
+```
+handleKeyDown = (e) => {
+if(keyCode.isTextModifyingKeyEvent(e)){
+ //一些操作
+}
+}
+...
+
+<Input onKeyDown={this.handleKeyDown} />
+```
+
+- isCharacterKey 验证是否是文本键
+```
+handleKeyDown = (e) => {
+if(keyCode.isCharacterKey(e)){
+ //一些操作
+}
+}
+...
+
+<Input onKeyDown={this.handleKeyDown} />
+```
+
+#### toArray 将数组安全的转换为react element 数组
+
+#### splitComponentProps 通过父组件的propTypes拆分分别传给父子组件的props
+
+
+```
+const propTypes = {
+    color: PropTypes.string,
+    size: PropTypes.string
+}
+class ParentClass extends React.Component{
+    render() {
+        let props = this.props;
+        let [parentProps, childProps] = splitComponentProps(props);
+
+        return (
+            <div>
+                <ChildrenClass {...childProps} />
+            </div>
+        )
+    }
+}
+
+ParentClass.propTypes = propTypes;
+
+```
+
+#### createChainedFunction 创建链式调用方法
+
+用法：
+```
+
+```
+
+#### contains 检验是否包含
+
+####
+
