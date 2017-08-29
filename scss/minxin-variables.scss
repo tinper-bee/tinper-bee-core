@@ -1438,3 +1438,14 @@ $backtop-background:unquote("rgb(#{$palette-u-gray-600})") !default;
 $backtop-color:unquote("rgb(#{$color-white})") !default;
 $backtop-right:10px;
 $backtop-bottom:10px;
+
+
+//dnd
+$dnd-list-background:unquote("rgb(#{$palette-grey-400})")!default;
+$dnd-list-padding:8px;
+$dnd-list-dragging-background:unquote("rgb(#{$palette-light-blue-A200})")!default;
+$dnd-item-color:unquote("rgb(#{$color-black})")!default;
+$dnd-item-padding:16px;
+$dnd-item-margin:4px;
+$dnd-item-background:unquote("rgb(#{$palette-grey-500})")!default;
+$dnd-item-dragging-background:unquote("rgb(#{$palette-blue-300})")!default;
