@@ -31,9 +31,7 @@ function buffer(fn, ms) {
 
   return bufferFn;
 }
-
-const Align = React.createClass({
-  propTypes: {
+const propTypes = {
     childrenProps: PropTypes.object,
     align: PropTypes.object.isRequired,
     target: PropTypes.func,
@@ -42,20 +40,25 @@ const Align = React.createClass({
     monitorWindowResize: PropTypes.bool,
     disabled: PropTypes.bool,
     children: PropTypes.any,
-  },
+}
 
-  getDefaultProps() {
-    return {
-      target() {
-        return window;
-      },
-      onAlign() {
-      },
-      monitorBufferTime: 50,
-      monitorWindowResize: false,
-      disabled: false,
-    };
+
+const defaultProps = {
+  target() {
+    return window;
   },
+  onAlign() {
+  },
+  monitorBufferTime: 50,
+  monitorWindowResize: false,
+  disabled: false,
+}
+
+class Align extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
 
   componentDidMount() {
     const props = this.props;
@@ -64,7 +67,7 @@ const Align = React.createClass({
     if (!props.disabled && props.monitorWindowResize) {
       this.startMonitorWindowResize();
     }
-  },
+  }
 
   componentDidUpdate(prevProps) {
     let reAlign = false;
@@ -93,34 +96,34 @@ const Align = React.createClass({
     } else {
       this.stopMonitorWindowResize();
     }
-  },
+  }
 
   componentWillUnmount() {
     this.stopMonitorWindowResize();
-  },
+  }
 
   startMonitorWindowResize() {
     if (!this.resizeHandler) {
       this.bufferMonitor = buffer(this.forceAlign, this.props.monitorBufferTime);
       this.resizeHandler = addEventListener(window, 'resize', this.bufferMonitor);
     }
-  },
+  }
 
-  stopMonitorWindowResize() {
+  stopMonitorWindowResize = () => {
     if (this.resizeHandler) {
       this.bufferMonitor.clear();
       this.resizeHandler.remove();
       this.resizeHandler = null;
     }
-  },
+  }
 
-  forceAlign() {
+  forceAlign = () => {
     const props = this.props;
     if (!props.disabled) {
       const source = ReactDOM.findDOMNode(this);
       props.onAlign(source, align(source, props.target(), props.align));
     }
-  },
+  }
 
   render() {
     const { childrenProps, children } = this.props;
@@ -135,7 +138,9 @@ const Align = React.createClass({
       return React.cloneElement(child, newProps);
     }
     return child;
-  },
-});
+  }
+};
 
+Align.defaultProps = defaultProps;
+Align.propTypes = propTypes;
 export default Align;
