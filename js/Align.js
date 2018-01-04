@@ -1,4 +1,6 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import ReactDOM from 'react-dom';
 import align from 'dom-align';
 import addEventListener from './addEventListener';
@@ -8,7 +10,7 @@ function isWindow(obj) {
   /* eslint no-eq-null: 0 */
   /* eslint eqeqeq: 0 */
   return obj != null && obj == obj.window;
-} 
+}
 
 function buffer(fn, ms) {
   let timer;
@@ -30,8 +32,7 @@ function buffer(fn, ms) {
   return bufferFn;
 }
 
-class Align extends Component{
-  static propTypes = {
+const propTypes = {
     childrenProps: PropTypes.object,
     align: PropTypes.object.isRequired,
     target: PropTypes.func,
@@ -40,17 +41,24 @@ class Align extends Component{
     monitorWindowResize: PropTypes.bool,
     disabled: PropTypes.bool,
     children: PropTypes.any,
-  };
+}
 
-  static defaultProps = {
-      target() {
-          return window;
-      },
-      onAlign() {
-      },
-      monitorBufferTime: 50,
-      monitorWindowResize: false,
-      disabled: false,
+
+const defaultProps = {
+  target() {
+    return window;
+  },
+  onAlign() {
+  },
+  monitorBufferTime: 50,
+  monitorWindowResize: false,
+  disabled: false,
+}
+
+class Align extends React.Component {
+
+  constructor(props) {
+    super(props);
   }
 
   componentDidMount() {
@@ -133,5 +141,8 @@ class Align extends Component{
     return child;
   }
 };
+
+Align.defaultProps = defaultProps;
+Align.propTypes = propTypes;
 
 export default Align;

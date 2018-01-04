@@ -9,7 +9,7 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
-$unit: 1rem !default;
+$unit: 10px !default;
 //  IMAGES
 $image_path: '/images' !default;
 
@@ -290,9 +290,9 @@ $font-size-sm:1.2 * $unit;
 
 
 $form-control-border-radius: 3px;
-$form-control-default-font-size: 1.4rem;
-$form-control-lg-font-size: 1.4rem;
-$form-control-sm-font-size: 1.2rem;
+$form-control-default-font-size: 14px;
+$form-control-lg-font-size: 14px;
+$form-control-sm-font-size: 12px;
 $form-control-default-height: 30px;
 $form-control-lg-height: 38px;
 $form-control-sm-height: 24px;

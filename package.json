@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee-core",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "style core and js util for tinper-bee",
   "main": "lib/index.js",
   "engines": {
@@ -22,8 +22,14 @@
     "dom-align": "^1.5.2",
     "warning": "^3.0.0"
   },
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.0",
+    "react-dom": "^15.3.0 || ^16.0",
+    "prop-types": "15.6.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "prop-types": "^15.5.10",
     "babel-plugin-istanbul": "^3.0.0",
     "babel-plugin-transform-es2017-object-entries": "0.0.4",
     "babel-plugin-transform-object-assign": "^6.8.0",
