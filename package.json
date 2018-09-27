@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee-core",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "style core and js util for tinper-bee",
   "main": "lib/index.js",
   "engines": {
@@ -10,7 +10,12 @@
   "author": "zhoubyc",
   "repository": "http://github.com/tinper-bee/tinper-bee-core",
   "bugs": "https://github.com/tinper-bee/tinper-bee-core/issues",
-  "keywords": "tinper bee react util",
+  "keywords": [
+    "tinper",
+    "bee",
+    "react",
+    "til"
+  ],
   "scripts": {
     "build": "rimraf lib && babel js -d lib"
   },
