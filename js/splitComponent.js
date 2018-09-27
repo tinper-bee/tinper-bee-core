@@ -1,3 +1,12 @@
+function _objectEntries(obj) {
+    var entries = [];
+    var keys = Object.keys(obj);
+
+    for (var k = 0; k < keys.length; ++k) entries.push([keys[k], obj[keys[k]]]);
+
+    return entries;
+}
+
 /**
  * 分割要传入父元素和子元素的props
  * @param  {[object]} props     传入的属性
@@ -10,7 +19,7 @@ export default function splitComponentProps(props, Component) {
   const parentProps = {};
   const childProps = {};
 
-  Object.entries(props).forEach(([propName, propValue]) => {
+    _objectEntries(props).forEach(([propName, propValue]) => {
     if (componentPropTypes[propName]) {
       parentProps[propName] = propValue;
     } else {
