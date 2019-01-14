@@ -341,9 +341,9 @@ $input-text-height:36px !default;
 $input-text-normal-width:360px !default;
 $input-text-short-width:180px !default;
 $input-text-normal-border-color:unquote("rgb(#{$palette-u-gray-400})") !default;
-$input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default
+$input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default;
 $input-text-focus-border-color:unquote("rgb(#{$palette-u-blue-400})") !default;
-$input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default
+$input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default;
 
 
 /* FormGroup */
@@ -630,7 +630,7 @@ $radio-bg-color: #fff;
 $radio-color: rgba(0, 0, 0, 0.65);
 
 $radio-checked-bg-color: #fff;
-$radio-checked-color: #108ee9;
+$radio-checked-color: $brand-default;
 $radio-checked-border-color: $radio-checked-color;
 
 $radio-icon-height: 18px;
