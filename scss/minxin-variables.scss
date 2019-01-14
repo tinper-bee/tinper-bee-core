@@ -144,10 +144,13 @@ $link-color:            $normal-color-base;
 $link-hover-color:      $hover-color-base;
 $link-active-color:     $active-color-base;
 
-
-$brand-default: $gray-lighter;
-$brand-default-hover: $gray-lightest;
-$brand-default-active:  $gray-light;
+// 品牌色
+// $brand-default: $gray-lighter;
+// $brand-default-hover: $gray-lightest;
+// $brand-default-active:  $gray-light;
+$brand-default: unquote("rgb(#{$color-primary})");
+$brand-default-hover: unquote("rgb(#{$color-primary-light})");
+$brand-default-active: unquote("rgb(#{$color-primary-dark})");
 
 $brand-primary : unquote("rgb(#{$color-primary})") !default;
 $brand-primary-hover: unquote("rgb(#{$color-primary-light})") !default;
@@ -199,21 +202,35 @@ $default-border-radius: 4px;
 
 // UButton
 
-// Default button colors.
+// Button 基础背景色.
+// 主按钮
 $button-default-color: $brand-default;
 $button-default-color-IE8: $brand-default;
+// 次按钮
+$button-bg-color: unquote("rgb(#{$button-secondary-bg-color})");
 
+// Button 不同状态下的背景色 ：hover、active、focus状态.
 $button-hover-color: $brand-default-hover;
 $button-active-color: $brand-default-active;
 $button-focus-color: $brand-default-active;
 
+// Button 文字颜色.
+// 主按钮
+$button-default-text-color: unquote("rgb(#{$text-color-base})") !default;
+// 次按钮
+$button-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
 
-$button-text-color: unquote("rgb(#{$color-dark-contrast})") !default;
-$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
+// Button 边框样式及颜色.
+$button-border-style:unquote("solid") !default;
+$button-border-color:unquote("rgb(#{$button-secondary-border-color})") !default;
+$button-default-border-color:$brand-default !default;
 
+// Button 不同状态下的边框颜色 ：hover、active、focus状态.
+$button-hover-border-color: $brand-default-hover;
+$button-active-border-color: $brand-default-active;
+$button-focus-border-color: $brand-default-active;
 
-
-
+// Button 配置不同colors属性时的背景色.
 $button-primary-color:  $brand-primary;
 $button-primary-active-color:  $brand-primary-active;
 $button-primary-hover-color:  $brand-primary-hover;
@@ -244,8 +261,7 @@ $button-fab-ripple-color-alt: unquote("rgb(#{$color-accent-contrast})") !default
 $button-icon-color: unquote("rgb(#{$palette-grey-700})") !default;
 $button-icon-focus-color: $button-focus-color !default;
 
-//Dimensions
-
+// Button 最小宽度、高度、内边距、外边距、行高、边框粗细、圆角.
 $button-min-width: 72/10 * $unit !default;
 $button-height: 36/10 * $unit !default;
 $button-padding: 5/10* $unit  13/10 * $unit !default;
@@ -255,6 +271,7 @@ $button-left-padding: 6/10* $unit !default;
 $button-line-height:1.57142857;
 $button-margin: 4/10 * $unit !default;
 $button-border-radius: 4/10 * $unit !default;
+$button-border-width: 1/10 * $unit !default;
 
 $button-fab-size: 38/10 * $unit !default;
 $button-fab-size-mini: 30/10 * $unit !default;
@@ -265,21 +282,19 @@ $button-icon-size-mini: 13/10 * $unit !default;
 
 $button-raised-font-size: 14/10 * $unit !default;
 
-$button-border-color:unquote("rgb(#{$palette-grey-300})") !default;
-
-// 大按钮
+// Button 大按钮
 $button-padding-y-lg:8px;
 $button-padding-x-lg:15px;
 $font-size-lg:1.4 * $unit;
 
 
-//特大型按钮
+// Button 特大型按钮
 $button-padding-y-xg:10px;
 $button-padding-x-xg:18px;
 $font-size-xg:1.6 * $unit;
 
 
-//小型按钮
+// Button 小型按钮
 $button-padding-y-sm:3px;
 $button-padding-x-sm:5px;
 $font-size-sm:1.2 * $unit;

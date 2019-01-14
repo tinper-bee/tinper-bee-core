@@ -1,5 +1,5 @@
 
-// Typography
+// Typography 排版
 
 @mixin typo-preferred-font($usePreferred: true) {
   @if $usePreferred {
@@ -319,7 +319,7 @@
 
     color: $text-color;
     border:1px  $bg-color solid;
-
+    background-color: #fff;
     &.focus, &:focus, &:hover {
     background-color: $bg-hover-color;
     border-color: $bg-hover-color;

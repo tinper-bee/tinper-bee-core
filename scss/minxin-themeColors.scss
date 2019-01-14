@@ -1,12 +1,29 @@
 @import "minxin-colors";
 
+// 主色
 $color-primary: $palette-blue-600 !default;
 $color-primary-dark: $palette-blue-800 !default;
 $color-primary-light: $palette-blue-400 !default;
 
+// 字体
+$font-family-primary: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+// 主字号
+$font-size-base: 14px !default;
+// 主文本色
+$text-color-base: $color-dark-contrast !default;    
+
+// 辅色
 $color-accent: $palette-green-600 !default;
 $color-accent-dark: $palette-green-800 !default;
 $color-accent-light: $palette-green-400 !default;
+
+// Button 细化样式变量:
+// 1.次按钮背景色
+$button-secondary-bg-color: $color-dark-contrast !default;
+// 2.次按钮边框色
+$button-secondary-border-color: $palette-u-gray-700 !default;
+// 3.次按钮文本色
+$button-secondary-text-color: $color-primary !default;
 
 
 // cyan主题
