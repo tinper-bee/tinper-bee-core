@@ -6,14 +6,14 @@ $default-color-dark:  $palette-grey-400;
 $default-color-light: $palette-grey-200;
 
 // 主题色
-$color-primary: "231,0,18" !default;
-$color-primary-dark: "200,0,16" !default;
-$color-primary-light: "233,71,84" !default;
+$color-primary: $palette-red-500 !default;
+$color-primary-dark: $palette-red-700 !default;
+$color-primary-light: $palette-red-300 !default;
 
 // 次按钮
-$secondary-color: "235,236,240" !default;
-$secondary-color-dark: $palette-red-400 !default;
-$secondary-color-light: $palette-red-200 !default;
+$secondary-color: $palette-grey-300 !default;
+$secondary-color-dark: $palette-grey-400 !default;
+$secondary-color-light: $palette-grey-200 !default;
 
 // 字体
 $font-family-primary: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
