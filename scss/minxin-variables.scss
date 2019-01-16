@@ -61,7 +61,8 @@ $gray-light:   unquote("rgb(#{$palette-grey-400})") !default;
 $gray-lighter:  unquote("rgb(#{$palette-grey-300})") !default;
 $gray-lightest:unquote("rgb(#{$palette-grey-200})") !default;
 $inverse: unquote("rgb(#{$color-white})") !default;
-$border-color-base:       $gray-lighter;
+// $border-color-base:       $gray-lighter;
+$border-color-base:       unquote("rgb(#{$border-color})") !default;
 $line-height-base:        1.57142857;
 
 
@@ -145,16 +146,20 @@ $link-hover-color:      $hover-color-base;
 $link-active-color:     $active-color-base;
 
 // 品牌色
-// $brand-default: $gray-lighter;
-// $brand-default-hover: $gray-lightest;
-// $brand-default-active:  $gray-light;
-$brand-default: unquote("rgb(#{$color-primary})");
-$brand-default-hover: unquote("rgb(#{$color-primary-light})");
-$brand-default-active: unquote("rgb(#{$color-primary-dark})");
+$brand-default: $gray-lighter;
+$brand-default-hover: $gray-lightest;
+$brand-default-active:  $gray-light;
+// $brand-default: unquote("rgb(#{$color-primary})");
+// $brand-default-hover: unquote("rgb(#{$color-primary-light})");
+// $brand-default-active: unquote("rgb(#{$color-primary-dark})");
 
 $brand-primary : unquote("rgb(#{$color-primary})") !default;
 $brand-primary-hover: unquote("rgb(#{$color-primary-light})") !default;
 $brand-primary-active: unquote("rgb(#{$color-primary-dark})") !default;
+
+$brand-secondary : unquote("rgb(#{$secondary-color})") !default;
+$brand-secondary-hover: unquote("rgb(#{$secondary-color-light})") !default;
+$brand-secondary-active: unquote("rgb(#{$secondary-color-dark})") !default;
 
 $brand-success: unquote("rgb(#{$palette-green-500})") !default;
 $brand-success-hover: unquote("rgb(#{$palette-green-300})") !default;
@@ -203,37 +208,25 @@ $default-border-radius: 4px;
 // UButton
 
 // Button 基础背景色.
-// 主按钮
-$button-default-color: $brand-default;
-$button-default-color-IE8: $brand-default;
-// 次按钮
-$button-bg-color: unquote("rgb(#{$button-secondary-bg-color})");
+// 默认按钮(<Button></Button>)
+$button-default-color: unquote("rgb(#{$default-color})");
+$button-default-color-IE8: unquote("rgb(#{$default-color})");
+
+// 边框按钮(shape:'border')
+$button-border-bg-color: unquote("rgb(#{$color-dark-contrast})");
 
 // Button 不同状态下的背景色 ：hover、active、focus状态.
-$button-hover-color: $brand-default-hover;
-$button-active-color: $brand-default-active;
-$button-focus-color: $brand-default-active;
-
-// Button 文字颜色.
-// 主按钮
-$button-default-text-color: unquote("rgb(#{$text-color-base})") !default;
-// 次按钮
-$button-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
-
-// Button 边框样式及颜色.
-$button-border-style:unquote("solid") !default;
-$button-border-color:unquote("rgb(#{$button-secondary-border-color})") !default;
-$button-default-border-color:$brand-default !default;
-
-// Button 不同状态下的边框颜色 ：hover、active、focus状态.
-$button-hover-border-color: $brand-default-hover;
-$button-active-border-color: $brand-default-active;
-$button-focus-border-color: $brand-default-active;
+$button-hover-color: unquote("rgb(#{$default-color-light})");
+$button-active-color: unquote("rgb(#{$default-color-dark})");
+$button-focus-color: unquote("rgb(#{$default-color-dark})");
 
 // Button 配置不同colors属性时的背景色.
 $button-primary-color:  $brand-primary;
 $button-primary-active-color:  $brand-primary-active;
 $button-primary-hover-color:  $brand-primary-hover;
+$button-secondary-color:  $brand-secondary;
+$button-secondary-active-color:  $brand-secondary-active;
+$button-secondary-hover-color:  $brand-secondary-hover;
 $button-success-color:  $brand-success;
 $button-success-active-color:  $brand-success-active;
 $button-success-hover-color:  $brand-success-hover;
@@ -249,6 +242,27 @@ $button-danger-hover-color:  $brand-danger-hover;
 $button-dark-color:  $brand-dark;
 $button-dark-active-color:  $brand-dark-active;
 $button-dark-hover-color:  $brand-dark-hover;
+
+// Button 文字颜色.
+// 主按钮(colors:'primary')
+$button-primary-text-color: unquote("rgb(#{$text-color-base})") !default;
+$button-text-color: $button-primary-text-color;
+// 次按钮(colors:'secondary')
+$button-secondary-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
+// 默认按钮(<Button></Button>)
+$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
+// 边框按钮(shape:'border')
+$button-border-text-color: unquote("rgb(#{$color-primary})") !default;
+
+// Button 边框样式及颜色.
+$button-border-style: unquote("solid") !default;
+$button-border-color: $border-color-base;
+$button-default-border-color: $button-default-color !default;
+
+// Button 不同状态下的边框颜色 ：hover、active、focus状态.
+$button-hover-border-color: $brand-default-hover;
+$button-active-border-color: $brand-default-active;
+$button-focus-border-color: $brand-default-active;
 
 // FAB colors and sizes.
 $button-fab-color-alt: unquote("rgb(#{$color-accent})") !default;

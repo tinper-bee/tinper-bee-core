@@ -318,8 +318,9 @@
 @mixin border-button-styles-variant($text-color,$bg-color,$bg-hover-color,$bg-active-color) {
 
     color: $text-color;
-    border:1px  $bg-color solid;
     background-color: #fff;
+    border:1px  $bg-color solid;
+
     &.focus, &:focus, &:hover {
     background-color: $bg-hover-color;
     border-color: $bg-hover-color;
