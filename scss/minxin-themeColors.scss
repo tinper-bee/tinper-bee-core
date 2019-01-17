@@ -26,11 +26,11 @@ $border-color: $palette-grey-400 !default;
 
 // Button 细化样式变量:
 // 1.次按钮背景色
-$button-secondary-bg-color: $color-dark-contrast !default;
+// $button-secondary-bg-color: $color-dark-contrast !default;
 // 2.次按钮边框色
-$button-secondary-border-color: $palette-u-gray-700 !default;
+// $button-secondary-border-color: $palette-u-gray-700 !default;
 // 3.次按钮文本色
-$button-secondary-text-color: $color-primary !default;
+$button-secondary-text-color: $color-light-contrast !default;
 
 // 辅色
 $color-accent: $palette-green-600 !default;

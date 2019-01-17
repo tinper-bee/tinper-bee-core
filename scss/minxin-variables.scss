@@ -218,7 +218,7 @@ $button-border-bg-color: unquote("rgb(#{$color-dark-contrast})");
 // Button 不同状态下的背景色 ：hover、active、focus状态.
 $button-hover-color: unquote("rgb(#{$default-color-light})");
 $button-active-color: unquote("rgb(#{$default-color-dark})");
-$button-focus-color: unquote("rgb(#{$default-color-dark})");
+$button-focus-color: unquote("rgb(#{$default-color-light})");
 
 // Button 配置不同colors属性时的背景色.
 $button-primary-color:  $brand-primary;
@@ -248,7 +248,7 @@ $button-dark-hover-color:  $brand-dark-hover;
 $button-primary-text-color: unquote("rgb(#{$text-color-base})") !default;
 $button-text-color: $button-primary-text-color;
 // 次按钮(colors:'secondary')
-$button-secondary-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
+$button-second-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
 // 默认按钮(<Button></Button>)
 $button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
 // 边框按钮(shape:'border')
