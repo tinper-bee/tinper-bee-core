@@ -23,6 +23,10 @@ $font-size-base: 14px !default;
 $text-color-base: $color-dark-contrast !default;  
 // 边框色 
 $border-color: $palette-grey-400 !default;
+// 条目hover背景色，包括：select、dropdown、table、datepicker、tree、menu等
+$item-hover-bg-color-base: $palette-blue-50 !default;
+// 条目selected背景色，包括：select、menu等
+$item-selected-bg-color-base: "247,247,247" !default;
 
 // Button 细化样式变量:
 // 1.次按钮背景色

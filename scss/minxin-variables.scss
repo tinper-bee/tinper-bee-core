@@ -205,6 +205,11 @@ $color-danger: unquote("rgb(#{$palette-red-500})") !default;
 
 $default-border-radius: 4px;
 
+// hover时的背景色，包括select、dropdown、table、datepicker、tree、menu等组件
+$hover-bg-color-base: unquote("rgb(#{$item-hover-bg-color-base})") !default;
+// // selected背景色，包括：select、menu等
+$selected-bg-color-base: unquote("rgb(#{$item-selected-bg-color-base})") !default;
+
 // UButton
 
 // Button 基础背景色.
@@ -1258,9 +1263,9 @@ $select-color: #666;
 $select-font-size: 12px;
 $select-dropdown-color: #666;
 $select-dropdown-bg-color: #fff;
-$select-dropdown-hover-bg: #e7f4fd;
-$select-dropdown-selected-bg: #f7f7f7;
-$select-dropdown-selected-color: #666;
+$select-dropdown-hover-bg: $hover-bg-color-base;
+$select-dropdown-selected-bg: $selected-bg-color-base;
+$select-dropdown-selected-color: rgb(134, 119, 119);
 $select-dropwdown-item-padding: 7px 16px;
 $select-disabled-color: #ccc;
 $select-disabled-bg: #f7f7f7;
