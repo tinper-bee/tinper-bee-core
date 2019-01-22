@@ -186,6 +186,10 @@ $brand-dark:  $gray-darker;
 $brand-dark-hover: $gray-dark;
 $brand-dark-active: $gray-darkest;
 
+$brand-light : unquote("rgb(#{$color-dark-contrast})") !default;
+$brand-light-hover: unquote("rgb(#{$palette-grey-200})") !default;
+$brand-light-active: unquote("rgb(#{$palette-grey-400})") !default;
+
 $brand-light-primary : unquote("rgb(#{$palette-blue-100})") !default;
 $brand-light-success: unquote("rgb(#{$palette-green-100})") !default;
 $brand-light-info: unquote("rgb(#{$palette-cyan-100})") !default;
@@ -200,6 +204,7 @@ $color-success: unquote("rgb(#{$palette-green-500})") !default;
 $color-info: unquote("rgb(#{$palette-cyan-500})") !default;
 $color-warning: unquote("rgb(#{$palette-orange-500})") !default;
 $color-danger: unquote("rgb(#{$palette-red-500})") !default;
+$color-light: $gray-darker !default;
 
 //redius
 
@@ -247,6 +252,9 @@ $button-danger-hover-color:  $brand-danger-hover;
 $button-dark-color:  $brand-dark;
 $button-dark-active-color:  $brand-dark-active;
 $button-dark-hover-color:  $brand-dark-hover;
+$button-light-color:  $brand-light;
+$button-light-active-color:  $brand-light-active;
+$button-light-hover-color:  $brand-light-hover;
 
 // Button 文字颜色.
 // 主按钮(colors:'primary')
