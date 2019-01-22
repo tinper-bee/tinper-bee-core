@@ -10,6 +10,11 @@ $primary-color: $palette-blue-600 !default;
 $primary-color-dark: $palette-blue-800 !default;
 $primary-color-light: $palette-blue-400 !default;
 
+// 向下兼容
+$color-primary: $palette-blue-600 !default;
+$color-primary-dark: $palette-blue-800 !default;
+$color-primary-light: $palette-blue-400 !default;
+
 // 次按钮
 $secondary-color: $palette-grey-300 !default;
 $secondary-color-dark: $palette-grey-400 !default;
