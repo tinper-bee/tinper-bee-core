@@ -560,6 +560,7 @@ $alert-info-color: $color-info;
 $alert-warning-color: $color-warning;
 $alert-danger-color: $color-danger;
 
+$timeline-primary-color: $brand-primary;
 $timeline-news-color: $color-news;
 $timeline-success-color: $color-success;
 $timeline-info-color: $color-info;
@@ -657,7 +658,7 @@ $radio-bg-color: #fff;
 $radio-color: rgba(0, 0, 0, 0.65);
 
 $radio-checked-bg-color: #fff;
-$radio-checked-color: $brand-default;
+$radio-checked-color: $brand-primary;
 $radio-checked-border-color: $radio-checked-color;
 
 $radio-icon-height: 18px;
