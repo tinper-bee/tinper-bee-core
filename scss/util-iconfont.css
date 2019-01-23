@@ -1306,3 +1306,7 @@
 .uf-minimize:before {
     content: "\e9da";
 }
+
+.uf-globe:before {
+    content: "\e666";
+}
