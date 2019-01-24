@@ -1492,3 +1492,7 @@ $dnd-item-padding:16px;
 $dnd-item-margin:4px;
 $dnd-item-background:unquote("rgb(#{$palette-grey-500})")!default;
 $dnd-item-dragging-background:unquote("rgb(#{$palette-blue-300})")!default;
+
+// bee-tree
+$tree-checkbox-color: unquote("rgb(#{$primary-color})") !default;
+$tree-node-bg-color: $hover-bg-color-base !default;
