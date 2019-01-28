@@ -901,7 +901,7 @@ $tag-default-hover-color:unquote("rgb(#{$palette-u-gray-500})");
 
 
 // pagination
-$pagination-gap-hover-border:unquote("rgb(#{$primary-color})");
+$pagination-gap-hover-border:#7A869A;
 
 $pagination-link-padding:                   7px 13px;
 $pagination-lg-font-size:                   16px;
@@ -916,11 +916,11 @@ $pag-color: #666666;
 $pag-bg-color: #fff;
 $pag-border-color:#d7d7d7;
 $pag-hover-color: #666;
-$pag-hover-bg-color:#eee;
+$pag-hover-bg-color:rgba(122, 134, 154, 0.35);
 $pag-hover-border-color:#d7d7d7;
 $pag-active-color: #fff;
-$pag-active-bg-color:unquote("rgb(#{$primary-color})");
-$pag-active-border-color:unquote("rgb(#{$primary-color})");
+$pag-active-bg-color:#7A869A;
+$pag-active-border-color:#7A869A;
 $pag-disabled-color: #777;
 $pag-disabled-bg-color:#fff;
 $pag-disabled-border-color:#ddd;
