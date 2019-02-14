@@ -1,3 +1,7 @@
+/**
+ * This source code is quoted from rc-util.
+ * homepage: https://github.com/react-component/util
+ */
 function createChainedFunction(...funcs) {
   return funcs
     .filter(f => f != null)
