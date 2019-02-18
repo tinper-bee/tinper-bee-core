@@ -10,16 +10,6 @@ $primary-color: $palette-blue-600 !default;
 $primary-color-dark: $palette-blue-800 !default;
 $primary-color-light: $palette-blue-400 !default;
 
-// 向下兼容
-$color-primary: $palette-blue-600 !default;
-$color-primary-dark: $palette-blue-800 !default;
-$color-primary-light: $palette-blue-400 !default;
-
-// 次按钮背景色
-$secondary-color: $palette-grey-300 !default;
-$secondary-color-dark: $palette-grey-400 !default;
-$secondary-color-light: $palette-grey-200 !default;
-
 // 字体
 $font-family-primary: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
 // 主字号
@@ -27,16 +17,18 @@ $font-size-base: 14px !default;
 // 主文本色
 $text-color-base: $color-dark-contrast !default;  
 
-// 边框色 
+// 边框色，包括按钮、输入框、分页
 $border-color: $palette-grey-400 !default;
-// 条目hover背景色，包括：select、dropdown、table、datepicker、tree、menu等
+// 条目hover背景色，包括：select、dropdown、table、datepicker、tree、menu、calendar
 $item-hover-bg-color-base: $palette-blue-50 !default;
 // 条目selected背景色，包括：select、menu等
 $item-selected-bg-color-base: "247,247,247" !default;
 
 // Button 细化样式变量:
-// 主按钮文本色
-// $button-primary-text-color: $color-dark-contrast !default;
+// 次按钮背景色
+$secondary-color: $palette-grey-300 !default;
+$secondary-color-dark: $palette-grey-400 !default;
+$secondary-color-light: $palette-grey-200 !default;
 // 次按钮文本色
 $button-secondary-text-color: $color-light-contrast !default;
 
@@ -45,6 +37,13 @@ $button-secondary-text-color: $color-light-contrast !default;
 $table-header-background-color: "247,247,247";
 // 表头文字颜色
 $table-header-text-color: "102, 102, 102";
+// 表格分割线颜色
+$table-border-color-base: "233,233,233";
+
+// 向下兼容
+$color-primary: $palette-blue-600 !default;
+$color-primary-dark: $palette-blue-800 !default;
+$color-primary-light: $palette-blue-400 !default;
 
 // 辅色
 $color-accent: $palette-green-600 !default;
