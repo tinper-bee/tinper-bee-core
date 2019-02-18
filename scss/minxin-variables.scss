@@ -291,8 +291,8 @@ $button-icon-focus-color: $button-focus-color !default;
 // Button 最小宽度、高度、内边距、外边距、行高、边框粗细、圆角.
 $button-min-width: 72/10 * $unit !default;
 $button-height: 36/10 * $unit !default;
-$button-padding: 5/10* $unit  13/10 * $unit !default;
-$button-padding-IE8: 5px 13px !default;
+$button-padding: 4/10* $unit  13/10 * $unit !default;
+$button-padding-IE8: 4px 13px !default;
 $button-top-padding: 1310 * $unit !default;
 $button-left-padding: 6/10* $unit !default;
 $button-line-height:1.57142857;
@@ -316,7 +316,7 @@ $font-size-lg:1.4 * $unit;
 
 
 // Button 特大型按钮
-$button-padding-y-xg:10px;
+$button-padding-y-xg:10.5px;
 $button-padding-x-xg:18px;
 $font-size-xg:1.6 * $unit;
 
@@ -1496,3 +1496,7 @@ $dnd-item-dragging-background:unquote("rgb(#{$palette-blue-300})")!default;
 // bee-tree
 $tree-checkbox-color: unquote("rgb(#{$primary-color})") !default;
 $tree-node-bg-color: $hover-bg-color-base !default;
+
+// bee-table
+$table-head-background-color: unquote("rgb(#{$table-header-background-color})") !default;
+$table-head-text-color: unquote("rgb(#{$table-header-text-color})") !default;

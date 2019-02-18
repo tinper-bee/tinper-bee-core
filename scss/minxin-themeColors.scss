@@ -40,6 +40,12 @@ $item-selected-bg-color-base: "247,247,247" !default;
 // 次按钮文本色
 $button-secondary-text-color: $color-light-contrast !default;
 
+// Table 细化样式变量：
+// 表头背景色
+$table-header-background-color: "247,247,247";
+// 表头文字颜色
+$table-header-text-color: "102, 102, 102";
+
 // 辅色
 $color-accent: $palette-green-600 !default;
 $color-accent-dark: $palette-green-800 !default;
