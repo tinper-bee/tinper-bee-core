@@ -265,7 +265,7 @@ $button-second-text-color: unquote("rgb(#{$button-secondary-text-color})") !defa
 // 默认按钮(<Button></Button>)
 $button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
 // 边框按钮(shape:'border')
-$button-border-text-color: unquote("rgb(#{$primary-color})") !default;
+// $button-border-text-color: unquote("rgb(#{$primary-color})") !default;
 
 // Button 边框样式及颜色.
 $button-border-style: unquote("solid") !default;
@@ -297,7 +297,7 @@ $button-top-padding: 1310 * $unit !default;
 $button-left-padding: 6/10* $unit !default;
 $button-line-height:1.57142857;
 $button-margin: 4/10 * $unit !default;
-$button-border-radius: 4/10 * $unit !default;
+$button-border-radius: 3/10 * $unit !default;
 $button-border-width: 1/10 * $unit !default;
 
 $button-fab-size: 38/10 * $unit !default;
