@@ -61,7 +61,8 @@ $gray-light:   unquote("rgb(#{$palette-grey-400})") !default;
 $gray-lighter:  unquote("rgb(#{$palette-grey-300})") !default;
 $gray-lightest:unquote("rgb(#{$palette-grey-200})") !default;
 $inverse: unquote("rgb(#{$color-white})") !default;
-$border-color-base:       $gray-lighter;
+// $border-color-base:       $gray-lighter;
+$border-color-base:       unquote("rgb(#{$border-color})") !default;
 $line-height-base:        1.57142857;
 
 
@@ -144,14 +145,21 @@ $link-color:            $normal-color-base;
 $link-hover-color:      $hover-color-base;
 $link-active-color:     $active-color-base;
 
-
+// 品牌色
 $brand-default: $gray-lighter;
 $brand-default-hover: $gray-lightest;
 $brand-default-active:  $gray-light;
+// $brand-default: unquote("rgb(#{$color-primary})");
+// $brand-default-hover: unquote("rgb(#{$color-primary-light})");
+// $brand-default-active: unquote("rgb(#{$color-primary-dark})");
 
-$brand-primary : unquote("rgb(#{$color-primary})") !default;
-$brand-primary-hover: unquote("rgb(#{$color-primary-light})") !default;
-$brand-primary-active: unquote("rgb(#{$color-primary-dark})") !default;
+$brand-primary : unquote("rgb(#{$primary-color})") !default;
+$brand-primary-hover: unquote("rgb(#{$primary-color-light})") !default;
+$brand-primary-active: unquote("rgb(#{$primary-color-dark})") !default;
+
+$brand-secondary : unquote("rgb(#{$secondary-color})") !default;
+$brand-secondary-hover: unquote("rgb(#{$secondary-color-light})") !default;
+$brand-secondary-active: unquote("rgb(#{$secondary-color-dark})") !default;
 
 $brand-success: unquote("rgb(#{$palette-green-500})") !default;
 $brand-success-hover: unquote("rgb(#{$palette-green-300})") !default;
@@ -178,6 +186,10 @@ $brand-dark:  $gray-darker;
 $brand-dark-hover: $gray-dark;
 $brand-dark-active: $gray-darkest;
 
+$brand-light : unquote("rgb(#{$color-dark-contrast})") !default;
+$brand-light-hover: unquote("rgb(#{$palette-grey-200})") !default;
+$brand-light-active: unquote("rgb(#{$palette-grey-400})") !default;
+
 $brand-light-primary : unquote("rgb(#{$palette-blue-100})") !default;
 $brand-light-success: unquote("rgb(#{$palette-green-100})") !default;
 $brand-light-info: unquote("rgb(#{$palette-cyan-100})") !default;
@@ -192,31 +204,39 @@ $color-success: unquote("rgb(#{$palette-green-500})") !default;
 $color-info: unquote("rgb(#{$palette-cyan-500})") !default;
 $color-warning: unquote("rgb(#{$palette-orange-500})") !default;
 $color-danger: unquote("rgb(#{$palette-red-500})") !default;
+$color-light: $gray-darker !default;
 
 //redius
 
 $default-border-radius: 4px;
 
+// hover时的背景色，包括select、dropdown、table、datepicker、tree、menu等组件
+$hover-bg-color-base: unquote("rgb(#{$item-hover-bg-color-base})") !default;
+// // selected背景色，包括：select、menu等
+$selected-bg-color-base: unquote("rgb(#{$item-selected-bg-color-base})") !default;
+
 // UButton
 
-// Default button colors.
-$button-default-color: $brand-default;
-$button-default-color-IE8: $brand-default;
+// Button 基础背景色.
+// 默认按钮(<Button></Button>)
+$button-default-color: unquote("rgb(#{$default-color})");
+$button-default-color-IE8: unquote("rgb(#{$default-color})");
 
-$button-hover-color: $brand-default-hover;
-$button-active-color: $brand-default-active;
-$button-focus-color: $brand-default-active;
+// 边框按钮(shape:'border')
+$button-border-bg-color: unquote("rgb(#{$color-dark-contrast})");
 
+// Button 不同状态下的背景色 ：hover、active、focus状态.
+$button-hover-color: unquote("rgb(#{$default-color-light})");
+$button-active-color: unquote("rgb(#{$default-color-dark})");
+$button-focus-color: unquote("rgb(#{$default-color-light})");
 
-$button-text-color: unquote("rgb(#{$color-dark-contrast})") !default;
-$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
-
-
-
-
+// Button 配置不同colors属性时的背景色.
 $button-primary-color:  $brand-primary;
 $button-primary-active-color:  $brand-primary-active;
 $button-primary-hover-color:  $brand-primary-hover;
+$button-secondary-color:  $brand-secondary;
+$button-secondary-active-color:  $brand-secondary-active;
+$button-secondary-hover-color:  $brand-secondary-hover;
 $button-success-color:  $brand-success;
 $button-success-active-color:  $brand-success-active;
 $button-success-hover-color:  $brand-success-hover;
@@ -232,6 +252,30 @@ $button-danger-hover-color:  $brand-danger-hover;
 $button-dark-color:  $brand-dark;
 $button-dark-active-color:  $brand-dark-active;
 $button-dark-hover-color:  $brand-dark-hover;
+$button-light-color:  $brand-light;
+$button-light-active-color:  $brand-light-active;
+$button-light-hover-color:  $brand-light-hover;
+
+// Button 文字颜色.
+// 主按钮(colors:'primary')
+$button-primary-text-color: unquote("rgb(#{$text-color-base})") !default;
+$button-text-color: $button-primary-text-color;
+// 次按钮(colors:'secondary')
+$button-second-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
+// 默认按钮(<Button></Button>)
+$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
+// 边框按钮(shape:'border')
+// $button-border-text-color: unquote("rgb(#{$primary-color})") !default;
+
+// Button 边框样式及颜色.
+$button-border-style: unquote("solid") !default;
+$button-border-color: $border-color-base;
+$button-default-border-color: $button-default-color !default;
+
+// Button 不同状态下的边框颜色 ：hover、active、focus状态.
+$button-hover-border-color: $brand-default-hover;
+$button-active-border-color: $brand-default-active;
+$button-focus-border-color: $brand-default-active;
 
 // FAB colors and sizes.
 $button-fab-color-alt: unquote("rgb(#{$color-accent})") !default;
@@ -244,17 +288,17 @@ $button-fab-ripple-color-alt: unquote("rgb(#{$color-accent-contrast})") !default
 $button-icon-color: unquote("rgb(#{$palette-grey-700})") !default;
 $button-icon-focus-color: $button-focus-color !default;
 
-//Dimensions
-
+// Button 最小宽度、高度、内边距、外边距、行高、边框粗细、圆角.
 $button-min-width: 72/10 * $unit !default;
 $button-height: 36/10 * $unit !default;
-$button-padding: 5/10* $unit  13/10 * $unit !default;
-$button-padding-IE8: 5px 13px !default;
+$button-padding: 4/10* $unit  13/10 * $unit !default;
+$button-padding-IE8: 4px 13px !default;
 $button-top-padding: 1310 * $unit !default;
 $button-left-padding: 6/10* $unit !default;
 $button-line-height:1.57142857;
 $button-margin: 4/10 * $unit !default;
-$button-border-radius: 4/10 * $unit !default;
+$button-border-radius: 3/10 * $unit !default;
+$button-border-width: 1/10 * $unit !default;
 
 $button-fab-size: 38/10 * $unit !default;
 $button-fab-size-mini: 30/10 * $unit !default;
@@ -265,21 +309,19 @@ $button-icon-size-mini: 13/10 * $unit !default;
 
 $button-raised-font-size: 14/10 * $unit !default;
 
-$button-border-color:unquote("rgb(#{$palette-grey-300})") !default;
-
-// 大按钮
+// Button 大按钮
 $button-padding-y-lg:8px;
 $button-padding-x-lg:15px;
 $font-size-lg:1.4 * $unit;
 
 
-//特大型按钮
-$button-padding-y-xg:10px;
+// Button 特大型按钮
+$button-padding-y-xg:10.5px;
 $button-padding-x-xg:18px;
 $font-size-xg:1.6 * $unit;
 
 
-//小型按钮
+// Button 小型按钮
 $button-padding-y-sm:3px;
 $button-padding-x-sm:5px;
 $font-size-sm:1.2 * $unit;
@@ -307,7 +349,7 @@ $input-text-background-color: transparent !default;
 $input-text-label-color: unquote("rgba(#{$color-black}, 0.26)") !default;
 $input-text-bottom-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 $input-text-bottom-border-color-IE8: unquote("rgb(#{$color-black})") !default;
-$input-text-highlight-color: unquote("rgb(#{$color-primary})") !default;
+$input-text-highlight-color: unquote("rgb(#{$primary-color})") !default;
 $input-text-disabled-color: $input-text-bottom-border-color !default;
 $input-text-disabled-text-color: $input-text-label-color !default;
 $input-text-error-color: unquote("rgb(222, 50, 38)") !default;
@@ -326,9 +368,9 @@ $input-text-height:36px !default;
 $input-text-normal-width:360px !default;
 $input-text-short-width:180px !default;
 $input-text-normal-border-color:unquote("rgb(#{$palette-u-gray-400})") !default;
-$input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default
+$input-text-color:unquote("rgb(#{$palette-u-gray-A200})") !default;
 $input-text-focus-border-color:unquote("rgb(#{$palette-u-blue-400})") !default;
-$input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default
+$input-lable-color:unquote("rgb(#{$palette-u-gray-900})") !default;
 
 
 /* FormGroup */
@@ -355,7 +397,7 @@ $layout-drawer-navigation-link-active-background: unquote("rgb(#{$palette-grey-2
 $layout-drawer-navigation-link-active-color: $layout-text-color !default;
 
 // Header
-$layout-header-bg-color: unquote("rgb(#{$color-primary})") !default;
+$layout-header-bg-color: unquote("rgb(#{$primary-color})") !default;
 $layout-header-text-color: unquote("rgb(#{$color-primary-contrast})") !default;
 $layout-header-nav-hover-color: unquote("rgba(#{$palette-grey-700}, 0.6)") !default;
 $layout-header-tab-text-color: unquote("rgba(#{$color-primary-contrast}, 0.6)") !default;
@@ -518,6 +560,7 @@ $alert-info-color: $color-info;
 $alert-warning-color: $color-warning;
 $alert-danger-color: $color-danger;
 
+$timeline-primary-color: $brand-primary;
 $timeline-news-color: $color-news;
 $timeline-success-color: $color-success;
 $timeline-info-color: $color-info;
@@ -535,7 +578,7 @@ $alert-close-font-weight: 700;
 
 //Checkbox
 
-$checkbox-color: unquote("rgb(#{$color-primary})") !default;
+$checkbox-color: unquote("rgb(#{$primary-color})") !default;
 $checkbox-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
 $checkbox-off-color-IE8: unquote("rgb(#{$palette-u-gray-600})") !default;
 $checkbox-disabled-color: unquote("rgb(#{$palette-u-gray-600})") !default;
@@ -565,7 +608,7 @@ $progress-warning-bg: $brand-warning;
 $progress-danger-bg: $brand-danger;
 $progress-dark-bg:  $brand-dark;
 
-$color-primary-opacity:unquote("rgba(#{$color-primary}, 0.7)") !default;
+$primary-color-opacity:unquote("rgba(#{$primary-color}, 0.7)") !default;
 $color-success-opacity:unquote("rgba(#{$palette-green-500}, 0.7)") !default;
 $color-info-opacity:unquote("rgba(#{$palette-cyan-500}, 0.7)") !default;
 $color-warning-opacity:unquote("rgba(#{$palette-orange-500}, 0.7)") !default;
@@ -586,7 +629,7 @@ $progress-xs-lable-color: #000;
 
 // Radio
 
-$radio-color: unquote("rgb(#{$color-primary})") !default;
+$radio-color: unquote("rgb(#{$primary-color})") !default;
 $radio-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
 $radio-off-color-IE8: unquote("rgb(#{$palette-u-gray-600})") !default;
 $radio-disabled-color: unquote("rgb(#{$palette-u-gray-600})") !default;
@@ -615,7 +658,7 @@ $radio-bg-color: #fff;
 $radio-color: rgba(0, 0, 0, 0.65);
 
 $radio-checked-bg-color: #fff;
-$radio-checked-color: #108ee9;
+$radio-checked-color: $brand-primary;
 $radio-checked-border-color: $radio-checked-color;
 
 $radio-icon-height: 18px;
@@ -643,7 +686,7 @@ $loading-color-2: unquote("rgb(#{$palette-red-500})") !default;
 $loading-color-3: unquote("rgb(#{$palette-yellow-600})") !default;
 $loading-color-4: unquote("rgb(#{$palette-green-500})") !default;
 
-$loading-single-color: unquote("rgb(#{$color-primary})") !default;
+$loading-single-color: unquote("rgb(#{$primary-color})") !default;
 
 $loading-size: 28px !default;
 $loading-stroke-width: 3px !default;
@@ -660,11 +703,11 @@ $loading-duration: 360 * $loading-arc-time / (
 
 // datetimepicker
 
-$date-bg-color: unquote("rgb(#{$color-primary})") !default;
+$date-bg-color: unquote("rgb(#{$primary-color})") !default;
 
 // message
 $snackbar-color: unquote("rgb(#{$color-white})") !default;
-$snackbar-background-color: unquote("rgb(#{$color-primary})") !default;
+$snackbar-background-color: unquote("rgb(#{$primary-color})") !default;
 $snackbar-color-cancel: unquote("rgb(#{$palette-red-500})") !default;
 $snackbar-color-accept: unquote("rgb(#{$palette-green-500})") !default;
 $snackbar-color-warning: unquote("rgb(#{$palette-lime-200})") !default;
@@ -724,7 +767,7 @@ $tooltip-opacity: .9;
 
 // 进度条
 $bar-height: 4px !default;
-$progress-main-color: unquote("rgb(#{$color-primary})") !default;
+$progress-main-color: unquote("rgb(#{$primary-color})") !default;
 $progress-secondary-color: unquote("rgba(#{$color-primary-contrast}, 0.7)") !default;
 $progress-fallback-buffer-color: unquote("rgba(#{$color-primary-contrast}, 0.9)") !default;
 $progress-image-path: $image_path;
@@ -735,7 +778,7 @@ $layout-header-tab-highlight: unquote("rgb(#{$color-accent})") !default;
 
 
 
-$tab-highlight-color: unquote("rgb(#{$color-primary})") !default;
+$tab-highlight-color: unquote("rgb(#{$primary-color})") !default;
 $tab-text-color: unquote("rgba(#{$color-black}, 0.54)") !default;
 $tab-active-text-color: unquote("rgba(#{$color-black}, 0.87)") !default;
 $tab-border-color: unquote("rgb(#{$palette-grey-300})") !default;
@@ -784,7 +827,7 @@ $card-subtitle-color: unquote("rgba(#{$color-black}, 0.54)") !default;
 
 
 $input-border:unquote("rgb(#{$palette-u-gray-500})");
-$input-border-focus:unquote("rgb(#{$color-primary})");
+$input-border-focus:unquote("rgb(#{$primary-color})");
 $input-border-disabled:unquote("rgb(#{$palette-u-gray-100})");
 $input-bg-disabled:unquote("rgb(#{$palette-u-gray-100})");
 $input-color:unquote("rgb(#{$palette-u-gray-A100})");
@@ -858,7 +901,7 @@ $tag-default-hover-color:unquote("rgb(#{$palette-u-gray-500})");
 
 
 // pagination
-$pagination-gap-hover-border:unquote("rgb(#{$color-primary})");
+$pagination-gap-hover-border:#7A869A;
 
 $pagination-link-padding:                   7px 13px;
 $pagination-lg-font-size:                   16px;
@@ -873,11 +916,11 @@ $pag-color: #666666;
 $pag-bg-color: #fff;
 $pag-border-color:#d7d7d7;
 $pag-hover-color: #666;
-$pag-hover-bg-color:#eee;
+$pag-hover-bg-color:rgba(122, 134, 154, 0.35);
 $pag-hover-border-color:#d7d7d7;
 $pag-active-color: #fff;
-$pag-active-bg-color:unquote("rgb(#{$color-primary})");
-$pag-active-border-color:unquote("rgb(#{$color-primary})");
+$pag-active-bg-color:#7A869A;
+$pag-active-border-color:#7A869A;
 $pag-disabled-color: #777;
 $pag-disabled-bg-color:#fff;
 $pag-disabled-border-color:#ddd;
@@ -1041,7 +1084,7 @@ $step-xs-number-font-size: 20px;
 $step-xs-number-size: 24px;
 
 // blog nav
-$blognav-active-color:unquote("rgb(#{$color-primary})");
+$blognav-active-color:unquote("rgb(#{$primary-color})");
 // widget
 $widget-padding-left:30px;
 $widget-padding-top:10px;
@@ -1229,9 +1272,9 @@ $select-color: #666;
 $select-font-size: 12px;
 $select-dropdown-color: #666;
 $select-dropdown-bg-color: #fff;
-$select-dropdown-hover-bg: #e7f4fd;
-$select-dropdown-selected-bg: #f7f7f7;
-$select-dropdown-selected-color: #666;
+$select-dropdown-hover-bg: $hover-bg-color-base;
+$select-dropdown-selected-bg: $selected-bg-color-base;
+$select-dropdown-selected-color: rgb(134, 119, 119);
 $select-dropwdown-item-padding: 7px 16px;
 $select-disabled-color: #ccc;
 $select-disabled-bg: #f7f7f7;
@@ -1429,7 +1472,7 @@ $tabs-fadeup-conPad: 16px;
 
 //rate
 $rate-star-default-color:$gray-lightest;
-$rate-star-active-color:$color-warning;
+$rate-star-active-color:$brand-primary;
 $rate-star-marginRight:8px;
 //backtop
 $back-top-padding:5px;
@@ -1449,3 +1492,11 @@ $dnd-item-padding:16px;
 $dnd-item-margin:4px;
 $dnd-item-background:unquote("rgb(#{$palette-grey-500})")!default;
 $dnd-item-dragging-background:unquote("rgb(#{$palette-blue-300})")!default;
+
+// bee-tree
+$tree-checkbox-color: unquote("rgb(#{$primary-color})") !default;
+$tree-node-bg-color: $hover-bg-color-base !default;
+
+// bee-table
+$table-head-background-color: unquote("rgb(#{$table-header-background-color})") !default;
+$table-head-text-color: unquote("rgb(#{$table-header-text-color})") !default;

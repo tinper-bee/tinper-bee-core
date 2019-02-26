@@ -1,3 +1,7 @@
+/**
+ * This source code is quoted from rc-util.
+ * homepage: https://github.com/react-component/util
+ */
 const EVENT_NAME_MAP = {
   transitionend: {
     transition: 'transitionend',

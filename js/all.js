@@ -1,3 +1,7 @@
+/**
+ * This source code is quoted from rc-util.
+ * homepage: https://github.com/react-component/util
+ */
 import createChainableTypeChecker from './utils/createChainableTypeChecker';
 
 export default function all(...validators) {

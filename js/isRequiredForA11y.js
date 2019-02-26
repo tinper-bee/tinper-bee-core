@@ -1,3 +1,7 @@
+/**
+ * This source code is quoted from rc-util.
+ * homepage: https://github.com/react-component/util
+ */
 export default function isRequiredForA11y(validator) {
   return function validate(
     props, propName, componentName, location, propFullName, ...args

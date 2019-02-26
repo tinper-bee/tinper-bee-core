@@ -2866,7 +2866,7 @@
 // Primary and accent
 
 .bg-primary {
-  background-color: unquote("rgb(#{$color-primary})") !important;
+  background-color: unquote("rgb(#{$primary-color})") !important;
 }
 
 .bg-primary-contrast {
@@ -2874,7 +2874,7 @@
 }
 
 .bg-primary-dark {
-  background-color: unquote("rgb(#{$color-primary-dark})") !important;
+  background-color: unquote("rgb(#{$primary-color-dark})") !important;
 }
 
 .bg-accent {
@@ -2886,7 +2886,7 @@
 }
 
 .text-primary {
-  color: unquote("rgb(#{$color-primary})") !important;
+  color: unquote("rgb(#{$primary-color})") !important;
 }
 
 .text-primary-contrast {
@@ -2894,7 +2894,7 @@
 }
 
 .text-primary-dark {
-  color: unquote("rgb(#{$color-primary-dark})") !important;
+  color: unquote("rgb(#{$primary-color-dark})") !important;
 }
 
 .text-accent {

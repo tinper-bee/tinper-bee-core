@@ -9,6 +9,10 @@
 
 // Mostly taken from ReactPropTypes.
 
+/* This source code is quoted from rc-util.
+ * homepage: https://github.com/react-component/util
+ */
+
 export default function createChainableTypeChecker(validate) {
   function checkType(
     isRequired,
