@@ -908,15 +908,15 @@ $pagination-lg-font-size:                   16px;
 $pagination-lg-padding-vertical:            9px;
 $pagination-lg-padding-horizontal:          15px;
 
-$pagination-small-font-size:               	14px;
-$pagination-small-padding-vertical:         5px;
-$pagination-small-padding-horizontal:       9px;
+$pagination-small-font-size:                12px;
+$pagination-small-padding-vertical:         4px;
+$pagination-small-padding-horizontal:       9.5px;
 
 $pag-color: #666666;
 $pag-bg-color: #fff;
 $pag-border-color:#d7d7d7;
 $pag-hover-color: #666;
-$pag-hover-bg-color:rgba(122, 134, 154, 0.35);
+$pag-hover-bg-color:#EBECF0;
 $pag-hover-border-color:#d7d7d7;
 $pag-active-color: #fff;
 $pag-active-bg-color:#7A869A;
@@ -925,7 +925,7 @@ $pag-disabled-color: #777;
 $pag-disabled-bg-color:#fff;
 $pag-disabled-border-color:#ddd;
 
-$border-radius-base:        3px;
+$border-radius-base:        $border-radius;
 $border-radius-large:       4px;
 $border-radius-small:       2px;
 
@@ -965,10 +965,6 @@ $menu-dark-bg-hover: $brand-dark-hover;
 
 
 // breadcrumbs
-
-$border-radius-base:        3px;
-$border-radius-large:       4px;
-$border-radius-small:       2px;
 
 $breadcrumb-padding-vertical:   8px;
 $breadcrumb-padding-horizontal: 10px;
@@ -1266,8 +1262,8 @@ $popconfirm-fallback-border-color: #fff;
 //select
 
 $select-bg-color: #fff;
-$select-border-color: #d9d9d9;
-$select-border-radius: 4px;
+$select-border-color: $border-color-base;
+$select-border-radius: $border-radius-base;
 $select-color: #666;
 $select-font-size: 12px;
 $select-dropdown-color: #666;

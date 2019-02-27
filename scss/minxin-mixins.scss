@@ -398,7 +398,7 @@
 
 // 分页
 
-@mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+@mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius, $width-size) {
   > li {
     > a {
       padding: $padding-vertical $padding-horizontal;
@@ -422,7 +422,22 @@
         font-size: $font-size;
         line-height: $line-height;
       }
+  }
+  > li.iconBtn > a {
+    &> i{
+      font-size: $font-size;
     }
+  }
+  + .u-pagination-total {
+    height: $width-size;
+    line-height: $width-size;
+    & + .data_per_select {
+      > span { line-height: $width-size; }
+      & + .page_jump > span {
+        line-height: $width-size;
+      }
+    }
+  }
 }
 
 //radio
