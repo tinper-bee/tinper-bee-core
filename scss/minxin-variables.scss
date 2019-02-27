@@ -65,10 +65,8 @@ $inverse: unquote("rgb(#{$color-white})") !default;
 $border-color-base:       unquote("rgb(#{$border-color})") !default;
 $line-height-base:        1.57142857;
 
-
-
-
-
+// 边框圆角
+$border-radius-base:        $border-radius;
 
 // 阴影
 
