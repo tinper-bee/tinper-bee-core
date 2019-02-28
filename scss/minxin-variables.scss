@@ -206,7 +206,7 @@ $color-light: $gray-darker !default;
 
 //redius
 
-$default-border-radius: 4px;
+$default-border-radius: $border-radius;
 
 // hover时的背景色，包括select、dropdown、table、datepicker、tree、menu等组件
 $hover-bg-color-base: unquote("rgb(#{$item-hover-bg-color-base})") !default;
@@ -567,7 +567,7 @@ $timeline-danger-color: $color-danger;
 
 $alert-padding:10px;
 $alert-font-size:12px;
-$alert-border-radius: 4px;
+$alert-border-radius: $border-radius;
 $alert-text-padding-left: 15px;
 $alert-text-padding-right: 15px;
 $alert-close-font-size: 21px;
@@ -700,6 +700,8 @@ $loading-duration: 360 * $loading-arc-time / (
     strip-units($loading-arc-start-rot + (360deg - $loading-arc-size)));
 
 // datetimepicker
+$timepicker-border-gap-color:#ccc;
+$timepicker-font-size:14px;
 
 $date-bg-color: unquote("rgb(#{$primary-color})") !default;
 
@@ -1236,7 +1238,6 @@ $message-font-size: 12px;
 $message-right: 30px;
 $message-width: 300px;
 $message-text-margin-right: 15px;
-$default-border-radius: 4px;
 $message-padding: 0;
 $message-content-padding: 15px;
 $message-background: $gray-darkest;
@@ -1494,3 +1495,9 @@ $tree-node-bg-color: $hover-bg-color-base !default;
 // bee-table
 $table-head-background-color: unquote("rgb(#{$table-header-background-color})") !default;
 $table-head-text-color: unquote("rgb(#{$table-header-text-color})") !default;
+
+// bee-transfer
+$transfer-border-gap-color:#d9d9d9;
+
+// bee-transfer
+$cascader-border-gap-color:#ccc;
