@@ -1494,3 +1494,6 @@ $tree-node-bg-color: $hover-bg-color-base !default;
 // bee-table
 $table-head-background-color: unquote("rgb(#{$table-header-background-color})") !default;
 $table-head-text-color: unquote("rgb(#{$table-header-text-color})") !default;
+
+// bee-transfer
+$transfer-border-gap-color:#d9d9d9;
