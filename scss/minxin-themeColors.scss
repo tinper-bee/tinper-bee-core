@@ -6,9 +6,9 @@ $default-color-dark:  $palette-grey-400;
 $default-color-light: $palette-grey-200;
 
 // 主题色
-$primary-color: $palette-blue-600 !default;
-$primary-color-dark: $palette-blue-800 !default;
-$primary-color-light: $palette-blue-400 !default;
+$primary-color: "225, 76, 70" !default;
+$primary-color-dark: "178, 51, 46" !default;
+$primary-color-light: "208, 0, 16" !default;
 
 // 字体
 $font-family-primary: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
@@ -17,10 +17,12 @@ $font-size-base: 14px !default;
 // 主文本色
 $text-color-base: $color-dark-contrast !default;  
 
+// 圆角，包括：button、select等
+$border-radius: 3px !default;
 // 边框色，包括按钮、输入框、分页
-$border-color: $palette-grey-400 !default;
+$border-color: "165, 173, 186" !default;
 // 条目hover背景色，包括：select、dropdown、table、datepicker、tree、menu、calendar
-$item-hover-bg-color-base: "243,243,243" !default;
+$item-hover-bg-color-base: "235, 236, 240" !default;
 // 条目selected背景色，包括：select、menu等
 $item-selected-bg-color-base: "247,247,247" !default;
 
