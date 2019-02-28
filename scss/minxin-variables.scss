@@ -871,7 +871,7 @@ $badge-font-size: 12px;
 $badge-font-dataicon-size: 10px;
 $badge-default-dataicon-fontcolor: #757575;
 $badge-default-dataicon-bgcolor: #fff;
-$badge-default-dataicon-bordercolor: #ccc;
+$badge-default-dataicon-bordercolor: $border-color-base;
 
 // labels
 $tag-padding: .25em .6em .25em;
@@ -1217,7 +1217,7 @@ $modal-xlg: 1200px;
 $modal-lg: 900px;
 $modal-sm: 300px;
 $modal-default: 600px;
-$modal-border-radius: 3px;
+$modal-border-radius: $border-radius-base;
 
 //notification
 
