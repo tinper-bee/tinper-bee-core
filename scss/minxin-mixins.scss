@@ -345,9 +345,14 @@
         background-color: $bg-color;
         border:1px  $bg-color solid;
 
-    &.focus, &:focus, &:hover {
+    &:hover {
         background-color: $bg-hover-color;
         border-color: $bg-hover-color;
+    }
+
+    &.focus, &:focus,&.u-button[disabled]:hover{
+      background-color: $bg-color;
+      border-color: $bg-color;
     }
 
     &.active, &:active {

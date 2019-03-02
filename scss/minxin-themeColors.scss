@@ -3,7 +3,7 @@
 // 默认色
 $default-color: $palette-grey-300;
 $default-color-dark:  $palette-grey-400;
-$default-color-light: $palette-grey-200;
+$default-color-light: $palette-grey-400;
 
 // 主题色
 $primary-color: "245, 60, 50" !default;
@@ -30,7 +30,7 @@ $item-selected-bg-color-base: "247,247,247" !default;
 // 次按钮背景色
 $secondary-color: $palette-grey-300 !default;
 $secondary-color-dark: $palette-grey-400 !default;
-$secondary-color-light: $palette-grey-200 !default;
+$secondary-color-light: $palette-grey-400 !default;
 // 次按钮文本色
 $button-secondary-text-color: $color-light-contrast !default;
 
