@@ -321,10 +321,16 @@
     background-color: #fff;
     border:1px  $bg-color solid;
 
-    &.focus, &:focus, &:hover {
-    background-color: $bg-hover-color;
-    border-color: $bg-hover-color;
-    color:#fff;
+    &:hover {
+      background-color: $bg-hover-color;
+      border-color: $bg-hover-color;
+      color:#fff;
+    }
+
+    &.focus, &:focus,&.u-button[disabled]:hover{
+      color: $text-color;
+      background-color: #fff;
+      border-color: $bg-color;
     }
 
     &.active, &:active {
