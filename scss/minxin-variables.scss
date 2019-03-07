@@ -261,7 +261,7 @@ $button-text-color: $button-primary-text-color;
 // 次按钮(colors:'secondary')
 $button-second-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
 // 默认按钮(<Button></Button>)
-$button-default-text-color: unquote("rgb(#{$color-light-contrast})") !default;
+$button-default-text-color: unquote("rgb(#{$palette-grey-900})") !default;
 // 边框按钮(shape:'border')
 // $button-border-text-color: unquote("rgb(#{$primary-color})") !default;
 
@@ -758,7 +758,7 @@ $table-bg-accent:               unquote("rgba(#{$palette-grey-200},.3)") !defaul
 // tooltip
 $tooltip-max-width: 200px;
 $tooltip-color: #fff;
-$tooltip-bg: #000;
+$tooltip-bg: #42526E;
 $tooltip-inverse-border-color: #d9d9d9;
 $tooltip-inverse-color: rgb(51,51,51);
 $tooltip-arrow-color: $tooltip-bg;
