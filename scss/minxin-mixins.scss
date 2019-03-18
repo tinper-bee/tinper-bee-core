@@ -327,7 +327,7 @@
       color:#fff;
     }
 
-    &.focus, &:focus:hover{
+    &.focus, &:focus{
       color: $text-color;
       background-color: #fff;
       border-color: $bg-color;
@@ -356,7 +356,7 @@
         border-color: $bg-hover-color;
     }
 
-    &.focus, &:focus:hover{
+    &.focus, &:focus{
       background-color: $bg-color;
       border-color: $bg-color;
     }

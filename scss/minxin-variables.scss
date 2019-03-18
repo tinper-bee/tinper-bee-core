@@ -630,7 +630,7 @@ $progress-xs-lable-color: #000;
 $radio-color: unquote("rgb(#{$primary-color})") !default;
 $radio-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
 $radio-off-color-IE8: unquote("rgb(#{$palette-u-gray-600})") !default;
-$radio-disabled-color: unquote("rgb(#{$palette-u-gray-600})") !default;
+$radio-disabled-color: #909090 !default;
 
 $radio-label-font-size: 13px !default;
 $radio-label-height: 32px !default;
@@ -647,13 +647,12 @@ $radio-warning-bg:            $brand-warning;
 $radio-danger-bg:             $brand-danger;
 $radio-dark-bg:               $brand-dark;
 
-$radio-disabled-color: rgba(0, 0, 0, 0.25);
 $radio-disabled-bg: #f7f7f7;
 $radio-diabled-border-color: #d9d9d9;
 
 $radio-border-color: #d9d9d9;
 $radio-bg-color: #fff;
-$radio-color: rgba(0, 0, 0, 0.65);
+$radio-color:#212121;
 
 $radio-checked-bg-color: #fff;
 $radio-checked-color: $brand-primary;
