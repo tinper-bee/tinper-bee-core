@@ -40,7 +40,8 @@ $font-weight-normal: 400 !default;
 $font-weight-semi-bold: 500 !default;
 $font-weight-bold: 700 !default;
 $font-color:unquote("rgb(#{$palette-u-gray-800})") !default;
-
+// 白色背景下的文字颜色
+$font-color-base: #212121 !default;
 
 $font-weight-override:    false;
 $font-weight-light:       300;
@@ -134,7 +135,7 @@ $hover-color-base:   unquote("rgb(#{$palette-blue-400})") !default;
 $bg-color-base:       $gray-lightest;
 
 //disable颜色
-$disabled-color-base: $gray-light;
+$disabled-color-base: #909090;
 $disabled-border-color: $gray-lighter;
 $disabled-bg-color: $gray-lightest;
 
@@ -340,7 +341,7 @@ $form-control-color: #424242;
 $form-control-bg-color: #fff;
 $form-control-border-color: $border-color-base;
 $form-control-disable-bg-color: #F7F9FB;
-$form-control-disable-color: #909090;
+$form-control-disable-color: $disabled-color-base;
 $form-control-disable-border-color: #DFE1E6;
 
 $input-text-background-color: transparent !default;
@@ -630,7 +631,7 @@ $progress-xs-lable-color: #000;
 $radio-color: unquote("rgb(#{$primary-color})") !default;
 $radio-off-color: unquote("rgb(#{$palette-u-gray-600})") !default;
 $radio-off-color-IE8: unquote("rgb(#{$palette-u-gray-600})") !default;
-$radio-disabled-color: #909090 !default;
+$radio-disabled-color: $disabled-color-base !default;
 
 $radio-label-font-size: 13px !default;
 $radio-label-height: 32px !default;
@@ -1262,7 +1263,7 @@ $popconfirm-fallback-border-color: #fff;
 $select-bg-color: #fff;
 $select-border-color: $border-color-base;
 $select-border-radius: $border-radius-base;
-$select-color: #666;
+$select-color: $font-color-base;
 $select-font-size: 12px;
 $select-dropdown-color: #666;
 $select-dropdown-bg-color: #fff;
@@ -1270,7 +1271,7 @@ $select-dropdown-hover-bg: $hover-bg-color-base;
 $select-dropdown-selected-bg: $selected-bg-color-base;
 $select-dropdown-selected-color: rgb(134, 119, 119);
 $select-dropwdown-item-padding: 7px 16px;
-$select-disabled-color: #ccc;
+$select-disabled-color: $disabled-color-base;
 $select-disabled-bg: #f7f7f7;
 $select-disabled-border-color: #d9d9d9;
 //dropdown
@@ -1286,7 +1287,7 @@ $dropdown-menu-font-size: 12px;
 $dropdown-menu-item-height: 42px;
 $dropdown-menu-item-light-height: 42px;
 $dropdown-menu-title-font-size: 12px;
-$dropdown-menu-title-color: #999;
+$dropdown-menu-title-color: $disabled-color-base;
 $dropdown-menu-title-padding:8px 16px;
 $dropdown-menu-title-line-height: 1.5;
 
