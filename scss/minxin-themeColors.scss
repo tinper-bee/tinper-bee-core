@@ -28,9 +28,9 @@ $item-selected-bg-color-base: "255, 247, 231" !default;
 
 // Button 细化样式变量:
 // 次按钮背景色
-$secondary-color: $palette-grey-300 !default;
-$secondary-color-dark: $palette-grey-400 !default;
-$secondary-color-light: $palette-grey-400 !default;
+$secondary-color: $palette-blue-grey-50 !default;
+$secondary-color-dark: "223,225,230" !default;
+$secondary-color-light: "223,225,230" !default;
 // 次按钮文本色
 $button-secondary-text-color: $palette-grey-900 !default;
 
