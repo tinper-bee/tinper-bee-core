@@ -189,12 +189,12 @@ $brand-light : unquote("rgb(#{$color-dark-contrast})") !default;
 $brand-light-hover: unquote("rgb(#{$palette-grey-200})") !default;
 $brand-light-active: unquote("rgb(#{$palette-grey-400})") !default;
 
-$brand-light-primary : unquote("rgb(#{$palette-blue-100})") !default;
-$brand-light-success: unquote("rgb(#{$palette-green-100})") !default;
-$brand-light-info: unquote("rgb(#{$palette-cyan-100})") !default;
-$brand-light-warning: unquote("rgb(#{$palette-orange-100})") !default;
-$brand-light-news: unquote("rgb(#{$palette-blue-100})") !default;
-$brand-light-danger:  unquote("rgb(#{$palette-red-100})") !default;
+$brand-light-primary : unquote("rgb(#{$palette-blue-50})") !default;
+$brand-light-success: unquote("rgb(#{$palette-green-50})") !default;
+$brand-light-info: unquote("rgb(#{$palette-cyan-50})") !default;
+$brand-light-warning: unquote("rgb(#{$palette-orange-50})") !default;
+$brand-light-news: unquote("rgb(#{$palette-blue-50})") !default;
+$brand-light-danger:  unquote("rgb(#{$palette-red-50})") !default;
 
 //不同背景下对应的文字颜色
 
