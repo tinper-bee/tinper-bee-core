@@ -35,6 +35,7 @@ $font-size-tiny: 1.2 * $unit !default;
 $font-size-small: 1.4 * $unit !default;
 $font-size-normal: $font-size !default;
 $font-size-big: 1.8 * $unit !default;
+$font-size-base: 12px !default;
 $font-weight-thin: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-semi-bold: 500 !default;
@@ -653,7 +654,7 @@ $radio-diabled-border-color: #d9d9d9;
 
 $radio-border-color: #d9d9d9;
 $radio-bg-color: #fff;
-$radio-color:#212121;
+$radio-color:$font-color-base;
 
 $radio-checked-bg-color: #fff;
 $radio-checked-color: $brand-primary;
