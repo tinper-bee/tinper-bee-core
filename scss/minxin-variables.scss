@@ -258,7 +258,7 @@ $button-light-hover-color:  $brand-light-hover;
 
 // Button 文字颜色.
 // 主按钮(colors:'primary')
-$button-primary-text-color: unquote("rgb(#{$text-color-base})") !default;
+$button-primary-text-color: $color-primary-contrast !default;
 $button-text-color: $button-primary-text-color;
 // 次按钮(colors:'secondary')
 $button-second-text-color: unquote("rgb(#{$button-secondary-text-color})") !default;
