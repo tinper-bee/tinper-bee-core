@@ -702,7 +702,7 @@ $loading-duration: 360 * $loading-arc-time / (
 
 // datetimepicker
 $timepicker-border-gap-color:#ccc;
-$timepicker-font-size:14px;
+$timepicker-font-size:$font-size-base;
 
 $date-bg-color: unquote("rgb(#{$primary-color})") !default;
 
